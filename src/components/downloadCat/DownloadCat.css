@@ -1,0 +1,30 @@
+.downloadCat {
+    width: 100%;
+    padding: 3vw;
+    background-color: #ffa723;
+}
+
+.downloadCat_wrapper {
+    width: 85.5%;
+    margin: auto;
+}
+
+.downloadCat_wrapper > button {
+    background-color: #fff;
+    color: #63B1F4;
+    white-space: nowrap;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 1vw;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    font-family: "Light";
+    transition: all 0.3s;
+    column-gap: 15px;
+    margin-top: -55px;
+    z-index: 90;
+    position: relative;
+}
