@@ -11,8 +11,14 @@
   padding: 0;
   z-index: 1;
   width: 100% !important;
-  height: 80vh;
+  /* height: 80vh; */
   background: #19b1f4;
+}
+
+.slick-slide {
+  outline: none;
+  /* width: 1078px; */
+  padding: 0;
 }
 
 .mainSlider {
@@ -41,6 +47,7 @@
   color: #fff;
   font-size: 4.6vw;
   width: 90%;
+  text-align: left;
 }
 
 .swiper_text > button {
@@ -87,7 +94,7 @@
 
 .slick-slider {
   position: relative;
-  background: #19b1f4;
+  /* background: #19b1f4; */
 }
 
 .slick-next,
@@ -108,7 +115,7 @@
   position: absolute;
 }
 
-.slick-next {
+.swiper > .slick-slider > .slick-next {
   right: -75px;
   background-image: url("https://therepublicoftoys.uz/static/media/btnarrow.a886bf66.svg");
   background-repeat: no-repeat;
@@ -123,7 +130,7 @@
   display: none;
 }
 
-.slick-prev {
+.swiper > .slick-slider > .slick-prev {
   left: -75px;
   background-image: url("https://therepublicoftoys.uz/static/media/btnarrow.a886bf66.svg");
   background-repeat: no-repeat;

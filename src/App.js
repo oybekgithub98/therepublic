@@ -1,4 +1,5 @@
 import './App.css';
+import Dino from './components/dino/Dino';
 import DownloadCat from './components/downloadCat/DownloadCat';
 import Home from './components/home/Home';
 import Nav from './components/nav/Nav';
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <DownloadCat/>
       <Product />
+      <Dino />
     </div>
   );
 }

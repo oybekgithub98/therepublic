@@ -1,0 +1,64 @@
+
+.productBody {
+    width: 100%;
+    height: 300px;
+}
+
+.productBody_wrapper {
+    width: 74.5%;
+    margin: auto;
+
+}
+
+.slick-slider > button {
+    display: none;
+}
+
+.product_item {
+    width: 100%;
+    height: 200px;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product_item > img {
+    width: 90%;
+    margin: auto;
+}
+
+.product_item > h5 {
+    margin-top: 44px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+    padding: 0px 22px;
+}
+
+.productBody_wrapper > .slick-slider > .slick-prev {
+    left: -38px;
+    background-image: url("https://therepublicoftoys.uz/static/media/Vector.02971ca7.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transform: rotate(180deg);
+    width: 50px !important;
+    background-color: transparent;
+}
+
+.productBody_wrapper > .slick-slider > .slick-next {
+    right: -38px;
+    background-image: url("https://therepublicoftoys.uz/static/media/Vector.02971ca7.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transform: rotate(180deg);
+    width: 50px !important;
+    background-color: transparent;
+    transform: rotate(0);
+}

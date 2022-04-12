@@ -1,0 +1,20 @@
+.dino {
+    width: 100%;
+    border: 1px solid red !important;
+    
+}
+
+.dino_wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.dino_img {
+    width: 50%;
+}
+
+.dino_text {
+    width: 50%;
+}

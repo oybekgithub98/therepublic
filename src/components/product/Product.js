@@ -1,4 +1,5 @@
 import React from 'react';
+import ProductBody from '../productBody/ProductBody';
 import './Product.css';
 
 const Product = () => {
@@ -7,11 +8,9 @@ const Product = () => {
         <div className="title">
             <span>kategoriya</span>
             <h1>Mahsulotlar</h1>
-            <hr />
+            <hr className='productHr' />
         </div>
-        <div className="product__body">
-            
-        </div>
+        <ProductBody/>
     </div>
   )
 }
