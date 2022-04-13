@@ -1,6 +1,6 @@
 
 
-.title {
+.product_title {
     background-image: url(../assets/Vector\ 2\ \(1\).svg);
     background-repeat: no-repeat;
     display: flex;
@@ -12,11 +12,11 @@
     padding: 80px 0;
 }
 
-.title > span, h1 {
+.product_title > span, h1 {
     text-align: center;
 }
 
-.title > hr {
+.product_title > hr {
     width: 5vw;
     margin: 1vw auto;
     border: 1px solid #ffa723;
