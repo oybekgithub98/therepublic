@@ -1,0 +1,53 @@
+.export {
+    margin: 7vw 0;
+    background-color: #F8FCFE;
+    margin-top: 0;
+    padding: 60px 0;
+}
+
+.export_wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.export_title {
+    text-align: center;
+    background-image: url("https://therepublicoftoys.uz/static/media/title-bg.0409017c.svg");
+    background-size: 18vw;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.eksport > .container {
+    width: 76vw;
+    margin: 0 auto
+}
+
+.export_wrapper > .container > img {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.export_title > span {
+    color: #ffa723;
+    font-size: 1.4vw;
+}
+
+.export_title > h1 {
+    font-size: 3vw;
+    color: #19b1f4;
+}
+
+.export_title > hr {
+    width: 56px;
+    border: 2px solid #FFBF60;
+    margin: auto;
+}
+
+.txt__export {
+    color: #19b1f4;
+    font-size: 1.3vw;
+    line-height: 2.8vw;
+    margin-top: 3vw;
+    text-align: center;
+}

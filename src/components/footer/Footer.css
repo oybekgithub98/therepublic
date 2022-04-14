@@ -1,0 +1,66 @@
+.footer {
+    background-color: #F6F6F7;
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.logo, .social, .adress {
+    width: 33.3%;
+    margin: 0 30px;
+}
+
+.logo, .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 2vw;
+    gap: 2vw;
+    font-size: 1vw;
+}
+
+.networking {
+    display: grid;
+    -ms-grid-columns: auto 2vw auto 2vw auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2vw;
+    gap: 2vw;
+    justify-content: center;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+    color: #404040;
+    grid-gap: 2vw;
+    gap: 2vw;
+    width: 30vw;
+}
+
+.adress > .row {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.adress > .row > .text {
+    margin-left: 14px;
+}
+
+.adress > .row > .text > h3{
+    font-size: 1.3vw;
+    color: #19b1f4;
+    text-align: center;
+}
+
+.adress > .row > .text > p {
+    color: #404040;
+    font-size: .9vw;
+}

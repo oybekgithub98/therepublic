@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react';
 import Slider from "react-slick";
+import Contact from '../contact/Contact';
 import Dino from '../dino/Dino';
 import DownloadCat from '../downloadCat/DownloadCat';
+import Export from '../export/Export';
+import OnCounter from '../onCounter/OnCounter';
 import Product from '../product/Product';
 import Protsess from '../protsess/Protsess';
+import Showroom from '../showroom/Showroom';
 import "./Home.css";
 
 const Home = () => {
@@ -65,7 +69,11 @@ const Home = () => {
     <DownloadCat />
     <Product />
     <Dino />
+    <OnCounter />
     <Protsess />
+    <Export />
+    <Showroom />
+    <Contact />
     </>
   )
 }

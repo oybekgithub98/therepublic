@@ -1,0 +1,64 @@
+.contact {
+    padding: 7vw 0;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://therepublicoftoys.uz/static/media/bgform.8fc23f6d.svg");
+    background-size: cover;
+}
+
+.contact > form > h1 {
+    width: 28vw;
+    text-align: center;
+    color: #fff;
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 388px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.row > input {
+    padding: 1vw;
+    border: none;
+    border-radius: 0.6vw;
+    resize: none;
+    width: 48%;
+}
+
+.contact > form > textarea {
+    padding: 1vw;
+    border: none;
+    border-radius: 0.6vw;
+    resize: none;
+}
+
+.contact > form > button {
+    background-color: #ffa723;
+    color: #fff;
+    white-space: nowrap;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 1vw;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    font-family: "Light";
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.contact > form > button:hover {
+    transform: scale(0.9);
+}

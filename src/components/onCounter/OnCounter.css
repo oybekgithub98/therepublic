@@ -1,0 +1,137 @@
+.on_counter {
+    width: 100%;
+    background: #F9FDFF;
+}
+
+.counter_wrapper {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.on_counter_title{
+    text-align: center;
+    background-image: url("https://therepublicoftoys.uz/static/media/title-bg.0409017c.svg");
+    background-size: 18vw;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.on_counter_title > span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    color: #FFBF60;
+}
+.on_counter_title > h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #05A1E4;
+}
+.on_counter_title {
+    text-align: center;
+    padding-top: 30px;
+}
+.on_counter_title_btn{
+    width: 56px;
+    height: px;
+    border: 2px solid #FFBF60;
+
+}
+.on_counter_card{
+    padding-bottom: 80px;
+    background: #F9FDFF;
+    padding-top: 50px;
+}
+.on_counter_card_wrapper{
+    display: flex;
+    padding-top: 30px;
+    justify-content:center;
+    column-gap: 98px;
+}
+.counter_card{
+    cursor: pointer;
+    background: #fff;
+    background-image: url("https://therepublicoftoys.uz/static/media/dot.9d65e439.svg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 3vw;
+    border: 1px solid #d6f3ff;
+    box-shadow: 3px 4px 64px #d3f0ff;
+    border-radius: 20px;
+    padding: 3vw 1.5vw;
+    width: 16vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.2vw;
+    gap: 1.2vw;
+}
+
+.counter_card1 {
+    cursor: pointer;
+    background: #fff;
+    background-image: url("https://therepublicoftoys.uz/static/media/dot.9d65e439.svg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 3vw;
+    border: 1px solid #d6f3ff;
+    box-shadow: 3px 4px 64px #d3f0ff;
+    border-radius: 20px;
+    padding: 3vw 1.5vw;
+    width: 16vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.2vw;
+    gap: 1.2vw;
+}
+
+.counter_card > h1 {
+    font-size: 2vw;
+    color: #19b1f4;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    border: 3px solid rgba(255,167,35,.315);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter_card1 > h1 {
+    font-size: 2vw;
+    color: #19b1f4;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    border: 3px solid rgba(255,167,35,.315);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter_card1:active{
+    border: 1px solid #70aec9;
+    transition: all 0.9s;
+}
+.counter_card:active{
+    border: 1px solid #05A1E4;
+    transition: all 0.9s;
+}
+
+.counter_text{
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 90px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #A6DCF9;
+}
