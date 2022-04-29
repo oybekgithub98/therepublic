@@ -2,6 +2,7 @@ import React from 'react'
 import './Nav.css';
 
 import { FiVolume2 } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
 
@@ -15,19 +16,12 @@ const Nav = () => {
           <img src="https://therepublicoftoys.uz/img/nav/logo.svg" alt="" />
         </div>
         <ul className='nav_collection'>
-          <li><a href="#">Asosiy</a></li>
-          <li><a href="#">Mahsulotlar</a></li>
+          <li><Link to="/">Asosiy</Link></li>
+          <li><Link to="/product">Mahsulotlar</Link></li>
           <li><a href="#">Biz haqimizda</a></li>
           <li><a href="#">Ko'rgazmalar</a></li>
           <li><a href="#">Hamkorlar</a></li>
           <li><a href="#">Bog'lanish</a></li>
-          <li>
-            <select className='langSelect'>
-              <option value="uz">uz</option>
-              <option value="ru">ru</option>
-              <option value="eng">eng</option>
-            </select>
-          </li>
           <li>
             <div className="volume">
               <div className="upper">
@@ -41,9 +35,16 @@ const Nav = () => {
             </div>
           </li>
           <li>
+            <select className='langSelect'>
+              <option value="uz">uz</option>
+              <option value="ru">ru</option>
+              <option value="eng">eng</option>
+            </select>
+          </li>
+          <li>
             <a href="#">
               <button className='nav_button' type='role'>
-                <img src="" alt="" />
+                <img src="https://therepublicoftoys.uz/img/nav/call.svg" alt="" />
                 <span>99 111 23 45</span>
               </button>
             </a>

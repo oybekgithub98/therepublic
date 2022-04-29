@@ -78,14 +78,21 @@
   background-color: #FFA723;
   border: none;
   outline: none;
-  padding: 12px 27.32px;
+  padding: 12px 17.32px;
   border-radius: 7px;
   color: #fff;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav_button:hover {
   transform: scale(0.9);
+}
+
+.nav_button > img {
+  margin: 0 10px;
 }
 
 .volume_icon {

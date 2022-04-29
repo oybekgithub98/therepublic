@@ -38,7 +38,7 @@
 }
 .on_counter_title_btn{
     width: 56px;
-    height: px;
+    /* height: px; */
     border: 2px solid #FFBF60;
 
 }
@@ -46,7 +46,9 @@
     padding-bottom: 80px;
     background: #F9FDFF;
     padding-top: 50px;
+  
 }
+
 .on_counter_card_wrapper{
     display: flex;
     padding-top: 30px;
@@ -70,6 +72,19 @@
     flex-direction: column;
     grid-gap: 1.2vw;
     gap: 1.2vw;
+    animation: counterCard 5s infinite;
+}
+
+@keyframes counterCard {
+    0% {
+        transform: translate(0, 0);    
+    }
+    50% {
+        transform: translate(0px, 50px);
+    }
+    100% {
+        transform: translate(0);
+    }
 }
 
 .counter_card1 {
@@ -89,6 +104,20 @@
     flex-direction: column;
     grid-gap: 1.2vw;
     gap: 1.2vw;
+    animation: counterCard1 5s infinite;
+}
+
+@keyframes counterCard1 {
+    0% {
+        transform: translate(0px, 50px);
+       
+    }
+    50% {
+        transform: translate(0, 0);    
+    }
+    100% {
+        transform: translate(0px, 50px);
+    }
 }
 
 .counter_card > h1 {

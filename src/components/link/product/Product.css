@@ -1,0 +1,156 @@
+li {
+    list-style-type: none;
+}
+
+.react-tabs {
+    width: 100%;
+}
+
+.react-tabs_wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 110px 0;
+}
+
+.tabs_menu {
+    width: 30%;
+}
+
+.tabs_menu > h2 {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.tabs_collection {
+    padding: 0 20px;
+    width: 80%;
+}
+
+.tabs_collection > li {
+    width: 100%;
+    background-color: transparent;
+    padding: 16px 0;
+    border: none;
+    cursor: pointer;
+    color: #404040;
+    background-color: transparent;
+    border-bottom: 0.5px solid #efefef;
+    font-size: 1vw;
+    transition: all 0.3s;
+}
+
+.tabs_collection > li:hover {
+    transform: scale(0.9);
+
+}
+
+.tabs_panel {
+    width: 70%;
+    display: block;
+}
+
+.tabs_panel > h1 {
+    text-align: left;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.tabs_panel > .offers {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1vw;
+    gap: 1vw;
+}
+
+.offers > a {
+    color: #666;
+}
+
+.offer {
+    border: 1px solid transparent;
+    position: relative;
+    width: 100%;
+    background: #f6f6f7;
+    border-radius: 1vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 1vw;
+    gap: 1vw;
+    height: 100%;
+    animation: fadein 1s both;
+    justify-content: space-evenly;
+}
+
+.offer:hover {
+    border: 1px solid #ffa723;
+  }
+
+.offer > p {
+    font-size: .7vw;
+    text-align: center;
+}
+
+.offer > span {
+    color: #ffa723;
+    font-size: .9vw;
+}
+
+.offer > img {
+    width: 80%;
+    height: 13vw;
+    object-fit: contain;
+}
+
+.hover__offer {
+    background-color: hsla(0,0%,100%,.808);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1vw;
+    gap: 1vw;
+    display: none;
+    border-radius: 1vw;
+    animation: hovercard .4s both;
+    cursor: pointer;
+}
+
+.offer:hover .hover__offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+@-webkit-keyframes hovercard {
+    from {
+      -webkit-transform: scale(0.1) translateY(-100px) translateX(-100px);
+      transform: scale(0.1) translateY(-100px) translateX(-100px);
+    }
+    to {
+      -webkit-transform: scale(1) translateY(0px) translateX(0px);
+      transform: scale(1) translateY(0px) translateX(0px);
+    }
+}
+@keyframes hovercard {
+    from {
+      -webkit-transform: scale(0.1) translateY(-100px) translateX(-100px);
+      transform: scale(0.1) translateY(-100px) translateX(-100px);
+    }
+    to {
+      -webkit-transform: scale(1) translateY(0px) translateX(0px);
+      transform: scale(1) translateY(0px) translateX(0px);
+    }
+}
+  
+.hover__offer > img {
+    width: 3vw
+}

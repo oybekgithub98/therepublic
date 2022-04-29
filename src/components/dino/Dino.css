@@ -29,6 +29,19 @@ a {
     width: 341px;
     height: 470px;
     margin-top: -30px;
+    position: relative;
+    animation: dinoImage 5s infinite;
+}
+@keyframes dinoImage {
+    0% {
+        transform: translate(0, 0);    
+    }
+    50% {
+        transform: translate(0px, 50px);
+    }
+    100% {
+        transform: translate(0);
+    }
 }
 
 .dino_text {
@@ -42,7 +55,6 @@ a {
 }
 
 .dino_title > h1 {
-    /* width: 322px; */
     font-family: 'PF BeauSans Pro';
     font-style: normal;
     font-weight: 700;
