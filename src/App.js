@@ -8,8 +8,6 @@ import Product from './components/link/product/Product';
 import tabsData from './components/assets/data';
 import './App.css';
 
-
-// const allCategories = ['all', ...new Set(items.map((item) => item.category))] 
 const allCategories = ['All', ...new Set(tabsData.map((item) => item.category))]
 
 function App() {
