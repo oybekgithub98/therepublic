@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import './Product.css';
 
 const Product = ({ items, filterItems, categories, activeCategory }) => {
@@ -25,7 +26,7 @@ const Product = ({ items, filterItems, categories, activeCategory }) => {
               items.map((menuItem) => {
                 const { id, img, text, desc } = menuItem;
                 return (
-                  <a href='#' key={id}>
+                  <Link to={`/product/${id}`} key={id}>
                     <div className='offer'>
                       <img src={img} alt="" />
                       <p>{text}</p>
@@ -35,7 +36,7 @@ const Product = ({ items, filterItems, categories, activeCategory }) => {
                         <img src="https://therepublicoftoys.uz/img/home/cardar.svg" alt="" />
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 )
               })
             }

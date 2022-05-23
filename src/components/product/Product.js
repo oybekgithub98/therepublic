@@ -1,14 +1,8 @@
 import React from 'react';
 import ProductBody from '../productBody/ProductBody';
 import './Product.css';
-// import data from "../assets/data"
 
 const Product = ({filterItems}) => {
-  // const [products, setProducts] = useState([]);
-
-  // const getInfo = (category)=>{
-  //   setProducts(data.filter(product => product.category === category))
-  // }
   
   return (
     <div className='product'>

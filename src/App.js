@@ -7,6 +7,7 @@ import Product from './components/link/product/Product';
 
 import tabsData from './components/assets/data';
 import './App.css';
+import OfferPage from './components/link/offerPage/OfferPage';
 
 const allCategories = ['All', ...new Set(tabsData.map((item) => item.category))]
 
@@ -32,8 +33,11 @@ function App() {
       <Nav/>
       <Routes>
         <Route path='/' element={<Home filterItems={filterItems}/>} />
+    
         <Route path='/product' element={<Product items={menuItems} activeCategory={activeCategory} categories={categories} filterItems={filterItems} />} />
+        <Route path="/product/:id" element={ <OfferPage />}/>
       </Routes>
+      
       <Footer />
     </div>
   );
