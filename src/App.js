@@ -14,22 +14,25 @@ function App() {
 
   const [menuItems, setMenuItems] = useState(tabsData);
   const [categories, setCategories] = useState(allCategories);
+  const [activeCategory, setActiveCategory] = useState("")
 
   const filterItems = (category) => {
     if(category === 'All') {
       setMenuItems(tabsData)
+      setActiveCategory("All")
       return;
     }
     const newItems = tabsData.filter((item) => item.category === category)
     setMenuItems(newItems);
+    setActiveCategory(category)
   }
 
   return (
     <div className="app">
       <Nav/>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/product' element={<Product items={menuItems} categories={categories} filterItems={filterItems} />} />
+        <Route path='/' element={<Home filterItems={filterItems}/>} />
+        <Route path='/product' element={<Product items={menuItems} activeCategory={activeCategory} categories={categories} filterItems={filterItems} />} />
       </Routes>
       <Footer />
     </div>

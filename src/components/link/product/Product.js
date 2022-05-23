@@ -1,8 +1,8 @@
 import React from 'react';
 import './Product.css';
 
-const Product = ({ items, filterItems, categories }) => {
-
+const Product = ({ items, filterItems, categories, activeCategory }) => {
+   
   return (
     <div className="react-tabs">
       <div className="react-tabs_wrapper">
@@ -10,13 +10,11 @@ const Product = ({ items, filterItems, categories }) => {
           <h2>kategoriya</h2>
           <ul className='tabs_collection' role="tablits">
             {
-              categories.map((category, index) => {
-                return (
-                  <li key={index} onClick={() => filterItems(category)} className="react-tabs__tab">
-                    {category}
-                  </li>
+              categories.map((category, index) =>               
+                ( <li key={index} onClick={() => filterItems(category)} className="react-tabs__tab">
+                    <span style={activeCategory === category ? {color: "red"}: null}>{category}</span>
+                  </li>)
                 )
-              })
             }
           </ul>
         </div>

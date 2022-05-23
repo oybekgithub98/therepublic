@@ -10,7 +10,7 @@ import Protsess from '../protsess/Protsess';
 import Showroom from '../showroom/Showroom';
 import "./Home.css";
 
-const Home = () => {
+const Home = ({filterItems}) => {
 
   const [nav2, setNav2] = useState();
 
@@ -67,7 +67,7 @@ const Home = () => {
       </div>
 
     <DownloadCat />
-    <Product />
+    <Product filterItems={filterItems}/>
     <Dino />
     <OnCounter />
     <Protsess />

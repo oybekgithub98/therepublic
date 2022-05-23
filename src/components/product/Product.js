@@ -3,7 +3,7 @@ import ProductBody from '../productBody/ProductBody';
 import './Product.css';
 // import data from "../assets/data"
 
-const Product = () => {
+const Product = ({filterItems}) => {
   // const [products, setProducts] = useState([]);
 
   // const getInfo = (category)=>{
@@ -17,7 +17,7 @@ const Product = () => {
             <h1>Mahsulotlar</h1>
             <hr className='productHr' />
         </div>
-        <ProductBody />
+        <ProductBody filterItems={filterItems}/>
     </div>
   )
 }
