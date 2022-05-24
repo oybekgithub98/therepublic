@@ -1,31 +1,39 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import data from "../../assets/data"
 import './OfferPage.css';
+import axios from 'axios';
+import { Link, useParams } from "react-router-dom";
 
-const OfferPage = () => {
+const OfferPage = ({products}) => {
   const [product, setProduct] = useState(null)
   const { id: productId } = useParams()
-
+ 
   useEffect(() => {
-    setProduct(data.find(val => val.id === Number(productId)))
-  }, [productId])
-  console.log(product);
+    axios
+      .get(`https://api.dev.therepublicoftoys.uz/api/v1/offers/${Number(productId)}`)
+      .then(function (response) {
+        setProduct(response.data);
+       
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+  }, []);
   return <>
     {product ? <div className="offerPage">
       <div className="offerPage_wrapper">
         <div className="item__offer">
           <div className="carousel carousel-slider">
             <div className='itemImg1'>
-              <img className='item__offer_img' src={product?.img} alt="" />
+              <img className='item__offer_img' src={'https://api.dev.therepublicoftoys.uz'+ product.img1} alt="" />
             </div>
           </div>
           <div className="carousel">
             <div className='itemImg2'>
-              <img className='item__offer_img' src={product?.img} alt="" />
+              <img className='item__offer_img' src={'https://api.dev.therepublicoftoys.uz'+ product.img2} alt="" />
             </div>
             <div className='itemImg2'>
-              <img className='item__offer_img' src={product?.img} alt="" />
+              <img className='item__offer_img' src={'https://api.dev.therepublicoftoys.uz'+ product.img3} alt="" />
             </div>
           </div>
         </div>
@@ -38,7 +46,7 @@ const OfferPage = () => {
                   <span>Artikul</span>
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
-                <td>PP 2019-018</td>
+                <td>{product.articul}</td>
               </tr>
               <tr>
                 <td>
@@ -55,7 +63,7 @@ const OfferPage = () => {
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
-                  <span>0.1</span>
+                  <span>{product.size_toy}</span>
                 </td>
               </tr>
               <tr>
@@ -64,7 +72,7 @@ const OfferPage = () => {
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
-                  <span>corrugated box</span>
+                  <span>{product.casegroup_en}</span>
                 </td>
               </tr>
               <tr>
@@ -73,7 +81,7 @@ const OfferPage = () => {
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
-                  <span>145*72*68</span>
+                  <span>{product.size_case}</span>
                 </td>
               </tr>
               <tr>
@@ -82,7 +90,7 @@ const OfferPage = () => {
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
-                  <span>corrugated box</span>
+                  <span>{product.case_en}</span>
                 </td>
               </tr>
               <tr>
@@ -91,7 +99,7 @@ const OfferPage = () => {
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
-                  <span>0.1</span>
+                  <span>{product.weight}</span>
                 </td>
               </tr>
               <tr>
@@ -100,7 +108,7 @@ const OfferPage = () => {
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
-                  <span>1</span>
+                  <span>{product.count}</span>
                 </td>
               </tr>
               <tr>
@@ -109,7 +117,7 @@ const OfferPage = () => {
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
-                  <a href='https://api.dev.therepublicoftoys.uz///files/img_24302836317084.pdf' download target="blank" className='sp__aroundBtn'>Yuklab olish</a>
+                  <a href={`https://api.dev.therepublicoftoys.uz/${product.file}`} download target="blank" className='sp__aroundBtn'>Yuklab olish</a>
                 </td>
               </tr>
               <tr>
