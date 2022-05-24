@@ -10,19 +10,16 @@ const ProductBody = ({getInfo, filterItems}) => {
     <div className='productBody'>
       <div className="productBody_wrapper">
         <Slider
-          // asNavFor={nav1}
           slidesToShow={5}
           swipeToSlide={true}
           focusOnSelect={true}
         >
-          {/* <div className='product_item' onClick={getInfo.bind(null, "Aqliy rivojlanish uchun o'yinchoq")}> */}
           <div className='product_item' onClick={filterItems.bind(null, "Aqliy rivojlanish uchun o'yinchoq")}>
             <Link to="/product">
               <img src="https://therepublicoftoys.uz/img/home/ayiqcha.png" alt="" />
             </Link>
             <h5>Aqliy rivojlanish uchun o'yinchoqlar</h5>
           </div>
-          {/* <div className='product_item' onClick={getInfo.bind(null, "Avtomobillar")}> */}
           <div className='product_item' onClick={filterItems.bind(null, "Avtomobillar")}>
             <Link to='/product'>
               <img src="https://therepublicoftoys.uz/img/home/kamazcard.png" alt="" />

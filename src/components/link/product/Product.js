@@ -1,8 +1,9 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Link } from "react-router-dom";
 import './Product.css';
 
 const Product = ({ items, filterItems, categories, activeCategory }) => {
+
    
   return (
     <div className="react-tabs">
@@ -13,7 +14,7 @@ const Product = ({ items, filterItems, categories, activeCategory }) => {
             {
               categories.map((category, index) =>               
                 ( <li key={index} onClick={() => filterItems(category)} className="react-tabs__tab">
-                    <span style={activeCategory === category ? {color: "red"}: null}>{category}</span>
+                    <span style={activeCategory === category ? {color: "coral"}: null}>{category}</span>
                   </li>)
                 )
             }

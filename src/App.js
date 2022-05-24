@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, useParams} from 'react-router-dom';
 import Footer from './components/footer/Footer';
 import Home from './components/home/Home';
 import Nav from './components/nav/Nav';
@@ -28,16 +28,18 @@ function App() {
     setActiveCategory(category)
   }
 
+  // const param = useParams();
+
   return (
     <div className="app">
       <Nav/>
       <Routes>
         <Route path='/' element={<Home filterItems={filterItems}/>} />
-    
+
         <Route path='/product' element={<Product items={menuItems} activeCategory={activeCategory} categories={categories} filterItems={filterItems} />} />
-        <Route path="/product/:id" element={ <OfferPage />}/>
+        <Route path="/product/:id" element={<OfferPage />}/>
       </Routes>
-      
+
       <Footer />
     </div>
   );

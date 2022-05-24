@@ -56,3 +56,75 @@
 .item__offer_img {
     width: 150px;
 }
+
+.sp__around {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 8vw;
+}
+
+.sp__around > h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.reactShtrixCode {
+    width: 150px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.sp__around > table {
+    width: 100%;
+}  
+
+.sp__around > table > tbody > tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 30px 12px 30px;
+}
+
+.sp__around > table > tbody > tr:nth-of-type(odd) {
+    background-color: #EFEFEF
+}
+
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.aroundImg {
+    margin-left: 5px;
+}
+
+.sp__aroundBtn {
+    padding: 0.4vw;
+    color: #fff;
+    border-radius: 0.4vw;
+    background-color: #5fceff;
+}
+
+tbody > tr > td > button {
+    background-color: #ffa723;
+    color: #fff;
+    white-space: nowrap;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 1vw;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1vw;
+    gap: 1vw;
+    font-size: 1.3vw;
+    font-family: "Light";
+}
