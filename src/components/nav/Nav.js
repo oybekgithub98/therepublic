@@ -13,7 +13,9 @@ const Nav = () => {
     <div className="nav">
       <div className="nav_wrapper">
         <div className='nav_logo'>
-          <img src="https://therepublicoftoys.uz/img/nav/logo.svg" alt="" />
+          <Link to="/">
+            <img src="https://therepublicoftoys.uz/img/nav/logo.svg" alt="" />
+          </Link>
         </div>
         <ul className='nav_collection'>
           <li><Link to="/">Asosiy</Link></li>

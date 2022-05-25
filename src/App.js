@@ -39,14 +39,14 @@ function App() {
     setActiveCategory(category)
   }
 
-  console.log(products)
+  // console.log(products)
   return (
     <div className="app">
       <Nav/>
       <Routes>
         <Route path='/' element={<Home filterItems={filterItems}/>} />
         <Route path='/product' element={<Product products={products} items={menuItems} activeCategory={activeCategory} categories={categories} filterItems={filterItems} />} />
-        <Route path="/product/:id" element={<OfferPage products={products}/>}/>
+        <Route path="/product/:id" element={<OfferPage products={products} />}/>
       </Routes>
       <Footer />
     </div>

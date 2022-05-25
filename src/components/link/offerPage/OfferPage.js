@@ -1,39 +1,45 @@
 import React, { useEffect, useState } from 'react';
-import data from "../../assets/data"
-import './OfferPage.css';
+// import data from "../../assets/data"
 import axios from 'axios';
-import { Link, useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+import Slider from "react-slick";
 
-const OfferPage = ({products}) => {
+import './OfferPage.css';
+
+const OfferPage = ({ products }) => {
   const [product, setProduct] = useState(null)
   const { id: productId } = useParams()
- 
+
   useEffect(() => {
     axios
       .get(`https://api.dev.therepublicoftoys.uz/api/v1/offers/${Number(productId)}`)
       .then(function (response) {
         setProduct(response.data);
-       
       })
       .catch(function (error) {
         console.log(error);
       })
-  }, []);
+      window.scrollTo(0, 180)
+      console.log(window)
+  }, [productId]);
+
+  console.log(products)
+
   return <>
     {product ? <div className="offerPage">
       <div className="offerPage_wrapper">
         <div className="item__offer">
           <div className="carousel carousel-slider">
             <div className='itemImg1'>
-              <img className='item__offer_img' src={'https://api.dev.therepublicoftoys.uz'+ product.img1} alt="" />
+              <img className='item__offer_img' src={'https://api.dev.therepublicoftoys.uz' + product.img1} alt="" />
             </div>
           </div>
           <div className="carousel">
             <div className='itemImg2'>
-              <img className='item__offer_img' src={'https://api.dev.therepublicoftoys.uz'+ product.img2} alt="" />
+              <img className='item__offer_img' src={'https://api.dev.therepublicoftoys.uz' + product.img2} alt="" />
             </div>
             <div className='itemImg2'>
-              <img className='item__offer_img' src={'https://api.dev.therepublicoftoys.uz'+ product.img3} alt="" />
+              <img className='item__offer_img' src={'https://api.dev.therepublicoftoys.uz' + product.img3} alt="" />
             </div>
           </div>
         </div>
@@ -129,10 +135,30 @@ const OfferPage = ({products}) => {
           </table>
         </div>
       </div>
+
     </div> :
       <h1>Loading...</h1>
     }
+    <div className='offerPageSlider'>
+      <div className="offerPageSlider_wrapper">
+        <Slider slidesToShow={5} swipeToSlide={true} focusOnSelect={true}>
+          {products?.map(({ img1, title_uz, case_uz, id }) => (
+            <Link to={`/product/${id}`} key={id}>
+              <div className='offer'>
+                <img src={'https://api.dev.therepublicoftoys.uz' + img1} alt="" />
+                <p>{title_uz}</p>
+                <span>{case_uz}</span>
+                <div className="hover__offer">
+                  <span>Подробнее</span>
+                  <img src="https://therepublicoftoys.uz/img/home/cardar.svg" alt="" />
+                </div>
+              </div>
+            </Link>
+          ))}
+        </Slider>
+      </div>
+    </div>
   </>
 }
 
-export default OfferPage
+export default OfferPage;

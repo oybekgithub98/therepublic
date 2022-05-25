@@ -36,8 +36,13 @@
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 25px;
     border-radius: 20px;
+}
+
+.itemImg2 > img {
+    width: 100%;
 }
 
 .itemImg2 > img {
@@ -127,4 +132,37 @@ tbody > tr > td > button {
     gap: 1vw;
     font-size: 1.3vw;
     font-family: "Light";
+}
+
+.offerPageSlider {
+    width: 100%;
+    margin-bottom: 130px;
+}
+
+.offerPageSlider_wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.offerPageSlider_wrapper > .slick-slider > .slick-prev {
+    left: -38px;
+    background-image: url("https://therepublicoftoys.uz/static/media/Vector.02971ca7.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transform: rotate(180deg);
+    width: 50px !important;
+    background-color: transparent;
+}
+
+.offerPageSlider_wrapper > .slick-slider > .slick-next {
+    right: -38px;
+    background-image: url("https://therepublicoftoys.uz/static/media/Vector.02971ca7.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transform: rotate(180deg);
+    width: 50px !important;
+    background-color: transparent;
+    transform: rotate(0);
 }
