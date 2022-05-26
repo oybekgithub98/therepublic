@@ -15,7 +15,7 @@ const Showroom = () => {
     }
 
     return (
-        <div className='showroom'>
+        <div className='showroom' id="showroom">
             <div className="showroom_wrapper">
                 <div className="farm">
                     <div className="showroom_title">
@@ -46,7 +46,7 @@ const Showroom = () => {
                                 <button className='dublItemClickBtn' onClick={toggleModal}><MdClose className='closeToggleModal' /></button>
                             </div>
                         </div>
-                        <div className="partner">
+                        <div className="partner" id="partner">
                             <div className="partner_product">
                                 <div className="partner_title">
                                     <span>ishonchdagi</span>

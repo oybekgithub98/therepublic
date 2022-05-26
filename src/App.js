@@ -8,6 +8,7 @@ import axios from "axios";
 import tabsData from './components/assets/data';
 import './App.css';
 import OfferPage from './components/link/offerPage/OfferPage';
+import AboutPage from './components/aboutPage/AboutPage';
 
 // const allCategories = ['All', ...new Set(tabsData.map((item) => item.category))]
 const allCategories = ["All", "плашадок", "Спортивные", "девчонок", "Конструкторы", "Машинки", "уморазвития"]
@@ -39,13 +40,13 @@ function App() {
     setActiveCategory(category)
   }
 
-  // console.log(products)
   return (
     <div className="app">
       <Nav/>
       <Routes>
         <Route path='/' element={<Home filterItems={filterItems}/>} />
         <Route path='/product' element={<Product products={products} items={menuItems} activeCategory={activeCategory} categories={categories} filterItems={filterItems} />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/product/:id" element={<OfferPage products={products} />}/>
       </Routes>
       <Footer />

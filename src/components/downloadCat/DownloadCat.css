@@ -11,7 +11,7 @@
 
 }
 
-.downloadCat_wrapper > button {
+.downloadCat_wrapper > a > button {
     background-color: #fff;
     color: #63B1F4;
     white-space: nowrap;
@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-.downloadCat_wrapper > button:hover {
+.downloadCat_wrapper > a > button:hover {
     transform: scale(0.9);
 }
 

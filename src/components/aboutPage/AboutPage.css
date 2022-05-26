@@ -1,0 +1,50 @@
+.aboutPage{
+    width: 100%;
+    margin: 100px 0 150px 0;
+}
+
+.aboutPage_wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.about_text{
+    width: 50%;
+}
+.about_galery{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+.about_text > h1{
+    text-align: start;
+    color: #19b1f4;
+    font-style: normal;
+    font-size: 3vw;
+    margin-bottom: 5vw;
+}
+.about_text > p{
+    font-size: 1vw;
+    width: 90%;
+    line-height: 1.5vw;
+    color: #666;
+}
+.about_item {
+    width: 80%;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2vw;
+    gap: 2vw;
+}
+
+.about_item > img {
+    width: 100%;
+    position: relative;
+}
+
+.about_item > .item_img {
+    top: 5vw;
+}

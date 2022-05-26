@@ -50,7 +50,7 @@
   text-align: left;
 }
 
-.swiper_text > button {
+.swiper_text > a {
   background-color: #5fceff;
   color: #fff;
   white-space: nowrap;
@@ -67,7 +67,7 @@
   margin-top: 86px
 }
 
-.swiper_text > button:hover {
+.swiper_text > a:hover {
   transform: scale(0.9);
 }
 

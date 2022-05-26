@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-// import data from "../../assets/data"
+import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 import { useParams, Link } from "react-router-dom";
 import Slider from "react-slick";
@@ -8,7 +7,46 @@ import './OfferPage.css';
 
 const OfferPage = ({ products }) => {
   const [product, setProduct] = useState(null)
-  const { id: productId } = useParams()
+  const [isDataFetching, setIsDataFetching] = useState(false)
+  const { id: productId } = useParams();
+  const [isNotSubmitted, setIsNotSubmitted] = useState(true)
+  const input1 = useRef();
+  const input2 = useRef()
+  
+
+  const [orderOpen, setOrderOpen] = useState(false);
+  const toggleModal =(e)=> {
+ 
+    if(e.target.classList.contains("child")){
+      return;
+    }
+    setOrderOpen(!orderOpen)
+  }
+  const sendData = (e)=>{
+ 
+    setTimeout(()=>{
+
+      if(!input1.current.value.trim().length ||
+         !input1.current.value.trim().toLowerCase()
+         .match(
+           /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+         ) || 
+         !input2.current.value.trim().length){
+        return;
+      }
+      
+      setOrderOpen(false)
+    }, 3000)
+  }
+  
+  useEffect(()=>{
+    const body = document.body
+    if(orderOpen){
+      body.style.overflow = "hidden"
+    } else {
+      body.style.overflow = "visible"
+    }
+  }, [orderOpen])
 
   useEffect(() => {
     axios
@@ -19,12 +57,12 @@ const OfferPage = ({ products }) => {
       .catch(function (error) {
         console.log(error);
       })
-      window.scrollTo(0, 180)
-      console.log(window)
+    window.scrollTo(0, 180)
+    console.log(window)
   }, [productId]);
 
-  console.log(products)
-
+  // console.log(products)
+ 
   return <>
     {product ? <div className="offerPage">
       <div className="offerPage_wrapper">
@@ -128,14 +166,31 @@ const OfferPage = ({ products }) => {
               </tr>
               <tr>
                 <td>
-                  <button>Order</button>
+                  <button onClick={toggleModal}>Order
+                   
+                  </button>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-
+      <div className={orderOpen ? "openOrder active" : "openOrder"} onClick={toggleModal}>
+        <div className="openOrder_wrapper child">
+          <form className='child' onSubmit={e => {
+            e.preventDefault()
+            setIsNotSubmitted(false)
+            setIsDataFetching(true)
+            setTimeout(()=> setIsDataFetching(false) ,3000)
+            }}>
+            <input type="email" ref={input1} className='child' placeholder='Phone number or e-mail' name='number' required />
+            <input type="text" ref={input2} className='child' placeholder='Name' name="name" required />
+            <button className='child' onMouseDown={sendData}> 
+            {!isNotSubmitted && isDataFetching ? "Loading" : "Order"}
+            </button>
+          </form>
+        </div>
+      </div>
     </div> :
       <h1>Loading...</h1>
     }
@@ -162,3 +217,51 @@ const OfferPage = ({ products }) => {
 }
 
 export default OfferPage;
+
+/////////////////////////
+
+
+// function Example() {
+//   const [show, setShow] = useState(false);
+
+//   const handleClose = () => setShow(false);
+//   const handleShow = () => setShow(true);
+
+//   return (
+//     <>
+      // <Button variant="primary" onClick={handleShow}>
+      //   Launch demo modal
+      // </Button>
+
+      // <Modal show={show} onHide={handleClose}
+      //   size="lg"
+      //   aria-labelledby="contained-modal-title-vcenter"
+      //   centered
+      // >
+      //   <Modal.Body>
+      //     <Form>
+      //       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+      //         <Form.Control
+      //           type="email"
+      //           placeholder="name@example.com"
+      //           autoFocus
+      //         />
+      //         <Form.Control
+      //           type="text"
+      //           placeholder="name@example.com"
+      //           autoFocus
+      //         />
+      //       </Form.Group>
+      //     </Form>
+      //   </Modal.Body>
+      //   <Modal.Footer>
+      //     <Button variant="primary" onClick={handleClose}>
+      //       Save Changes
+      //     </Button>
+      //   </Modal.Footer>
+      // </Modal>
+//     </>
+//   );
+// }
+
+// render(<Example />);

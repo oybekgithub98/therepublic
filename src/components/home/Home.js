@@ -8,6 +8,9 @@ import OnCounter from '../onCounter/OnCounter';
 import Product from '../product/Product';
 import Protsess from '../protsess/Protsess';
 import Showroom from '../showroom/Showroom';
+import { Link } from 'react-router-dom';
+
+
 import "./Home.css";
 
 const Home = ({filterItems}) => {
@@ -27,9 +30,9 @@ const Home = ({filterItems}) => {
           <div className="swiper_item">
             <div className="swiper_text">
               <h1>Havfsiz va bejirim</h1>
-              <button className="swiper_btn">Batafsil
+              <Link to="/product" className="swiper_btn"><span>Batafsil</span>
                 <img src="https://therepublicoftoys.uz/static/media/btnarrow.a886bf66.svg" alt="" />
-              </button>
+              </Link>
             </div>
             <div className="swiper_img">
               <img
@@ -41,9 +44,9 @@ const Home = ({filterItems}) => {
           <div className="swiper_item">
             <div className="swiper_text">
               <h1>Farzandlaringiz tanlovi</h1>
-              <button className="swiper_btn">Batafsil
+              <Link to="/product" className="swiper_btn"><span>Batafsil</span>
                 <img src="https://therepublicoftoys.uz/static/media/btnarrow.a886bf66.svg" alt="" />
-              </button>
+              </Link>
             </div>
             <div className="swiper_img">
               <img
@@ -55,9 +58,9 @@ const Home = ({filterItems}) => {
           <div className="swiper_item">
             <div className="swiper_text">
               <h1>Mahsulotlarimizdan zavqlaning</h1>
-              <button className="swiper_btn">Batafsil
+              <Link to="/product" className="swiper_btn"><span>Batafsil</span>
                 <img src="https://therepublicoftoys.uz/static/media/btnarrow.a886bf66.svg" alt="" />
-              </button>
+              </Link>
             </div>
             <div className="swiper_img">
               <img src="https://therepublicoftoys.uz/img/home/kamaz.png" alt="" />

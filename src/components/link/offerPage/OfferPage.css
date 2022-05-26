@@ -132,6 +132,74 @@ tbody > tr > td > button {
     gap: 1vw;
     font-size: 1.3vw;
     font-family: "Light";
+    cursor: pointer;
+}
+
+.openOrder {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    /* top: -100vh; */
+    opacity: 0;
+    z-index: -1;   
+    background-color: rgba(255, 255, 255, 0.75);
+    transition: all .5s;
+    transform: scale(.1);
+    transition: all 0.3s;
+}
+.openOrder.active {
+    top: 0;
+    opacity: 1;
+    z-index: 99;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.openOrder_wrapper {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    border: 1px solid rgb(204, 204, 204);
+    background: #F6E3C8;
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.openOrder_wrapper > form {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    grid-gap: 1vw;
+    gap: 1vw;
+}
+.openOrder_wrapper > form > input {
+    padding: 1.3vw;
+    border: none;
+    border-radius: 1vw;
+    box-shadow: 0 4px 47px rgb(0 0 0 / 15%);
+    outline: none;
+}
+
+.openOrder_wrapper > form > button {
+    background-color: #ffa723;
+    color: #fff;
+    white-space: nowrap;
+    padding: 1vw 2vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 1vw;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1vw;
+    gap: 1vw;
+    font-size: 1.3vw;
+    font-family: "Light";
 }
 
 .offerPageSlider {

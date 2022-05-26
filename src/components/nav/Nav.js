@@ -2,13 +2,19 @@ import React from 'react'
 import './Nav.css';
 
 import { FiVolume2 } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Nav = () => {
 
   const [volume, setVolume] = React.useState(50);
-
-
+  const location = useLocation()
+  const navigate = useNavigate()
+  
+  const handleClick = (endpoint) =>{
+    if(location?.pathname){
+      navigate("/")
+    }
+  }
   return (
     <div className="nav">
       <div className="nav_wrapper">
@@ -20,10 +26,10 @@ const Nav = () => {
         <ul className='nav_collection'>
           <li><Link to="/">Asosiy</Link></li>
           <li><Link to="/product">Mahsulotlar</Link></li>
-          <li><a href="#">Biz haqimizda</a></li>
-          <li><a href="#">Ko'rgazmalar</a></li>
-          <li><a href="#">Hamkorlar</a></li>
-          <li><a href="#">Bog'lanish</a></li>
+          <li><Link to="/about">Biz haqimizda</Link></li>
+          <li><a onClick={handleClick.bind(null, "#showroom")} href="#showroom">Ko'rgazmalar</a></li>
+          <li><a onClick={handleClick.bind(null, "#partner")} href="#partner">Hamkorlar</a></li>
+          <li><a onClick={handleClick.bind(null, "#contact")} href="#contact">Bog'lanish</a></li>
           <li>
             <div className="volume">
               <div className="upper">
@@ -44,10 +50,10 @@ const Nav = () => {
             </select>
           </li>
           <li>
-            <a href="#">
+            <a href="tel: +998995244698">
               <button className='nav_button' type='role'>
                 <img src="https://therepublicoftoys.uz/img/nav/call.svg" alt="" />
-                <span>99 111 23 45</span>
+                <span>99 524 46 98</span>
               </button>
             </a>
           </li>
