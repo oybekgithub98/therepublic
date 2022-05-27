@@ -133,6 +133,11 @@ tbody > tr > td > button {
     font-size: 1.3vw;
     font-family: "Light";
     cursor: pointer;
+    transition: all .3s;
+}
+
+tbody > tr > td > button:hover {
+    transform: scale(.9);
 }
 
 .openOrder {
@@ -200,6 +205,11 @@ tbody > tr > td > button {
     gap: 1vw;
     font-size: 1.3vw;
     font-family: "Light";
+    transition: all 0.3s;
+}
+
+.openOrder_wrapper > form > button:hover{
+    transform: scale(.9);
 }
 
 .offerPageSlider {

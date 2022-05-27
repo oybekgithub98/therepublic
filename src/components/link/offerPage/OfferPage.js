@@ -11,7 +11,7 @@ const OfferPage = ({ products }) => {
   const { id: productId } = useParams();
   const [isNotSubmitted, setIsNotSubmitted] = useState(true)
   const input1 = useRef();
-  const input2 = useRef()
+  const input2 = useRef();
   
 
   const [orderOpen, setOrderOpen] = useState(false);
@@ -217,51 +217,3 @@ const OfferPage = ({ products }) => {
 }
 
 export default OfferPage;
-
-/////////////////////////
-
-
-// function Example() {
-//   const [show, setShow] = useState(false);
-
-//   const handleClose = () => setShow(false);
-//   const handleShow = () => setShow(true);
-
-//   return (
-//     <>
-      // <Button variant="primary" onClick={handleShow}>
-      //   Launch demo modal
-      // </Button>
-
-      // <Modal show={show} onHide={handleClose}
-      //   size="lg"
-      //   aria-labelledby="contained-modal-title-vcenter"
-      //   centered
-      // >
-      //   <Modal.Body>
-      //     <Form>
-      //       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-      //         <Form.Control
-      //           type="email"
-      //           placeholder="name@example.com"
-      //           autoFocus
-      //         />
-      //         <Form.Control
-      //           type="text"
-      //           placeholder="name@example.com"
-      //           autoFocus
-      //         />
-      //       </Form.Group>
-      //     </Form>
-      //   </Modal.Body>
-      //   <Modal.Footer>
-      //     <Button variant="primary" onClick={handleClose}>
-      //       Save Changes
-      //     </Button>
-      //   </Modal.Footer>
-      // </Modal>
-//     </>
-//   );
-// }
-
-// render(<Example />);

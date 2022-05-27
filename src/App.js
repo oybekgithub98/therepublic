@@ -9,11 +9,13 @@ import tabsData from './components/assets/data';
 import './App.css';
 import OfferPage from './components/link/offerPage/OfferPage';
 import AboutPage from './components/aboutPage/AboutPage';
-
+import { useTranslation } from "react-i18next"
 // const allCategories = ['All', ...new Set(tabsData.map((item) => item.category))]
 const allCategories = ["All", "плашадок", "Спортивные", "девчонок", "Конструкторы", "Машинки", "уморазвития"]
 
 function App() {
+
+
   const [menuItems, setMenuItems] = useState(tabsData);
   const [categories, setCategories] = useState(allCategories);
   const [activeCategory, setActiveCategory] = useState("")

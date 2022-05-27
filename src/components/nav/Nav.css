@@ -6,6 +6,10 @@
   justify-content: space-evenly;
 }
 
+.nav_collection .active {
+  color: red;
+}
+
 .nav_wrapper {
   display: flex;
   align-items: center;
@@ -13,6 +17,14 @@
   justify-content: center;
   width: 80%;
   justify-content: space-between;
+}
+
+.nav_logo {
+  width: 100px;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .nav_collection {
@@ -24,7 +36,7 @@
 
 .nav_collection > li {
   list-style-type: none;
-  padding: 16px;
+  padding: 15px;
 }
 
 .nav_collection > li > a {

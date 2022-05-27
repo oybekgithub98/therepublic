@@ -1,20 +1,43 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Nav.css';
+import { useTranslation } from "react-i18next"
 
 import { FiVolume2 } from 'react-icons/fi';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
 
 const Nav = () => {
-
+  const { t, i18n, ready } = useTranslation();
   const [volume, setVolume] = React.useState(50);
-  const location = useLocation()
-  const navigate = useNavigate()
+  const [language, setLanguage] = React.useState("uz")
+  const location = useLocation();
+  const navigate = useNavigate();
+
+
+  useEffect(()=>{
+    i18n.changeLanguage(language)
+  }, [language])
+
+  const changeLanguage = (e) => {
+    setLanguage(e.target.value)
+  };
   
   const handleClick = (endpoint) =>{
     if(location?.pathname){
       navigate("/")
     }
   }
+
+  const LanguageSet = () => {
+    if (ready) {
+      return (
+        <select className='langSelect' value={language} onChange={changeLanguage}>
+        <option  value="en">en</option>
+        <option  value="uz">uz</option>
+        <option  value="ru">ru</option>
+      </select>
+      );
+    }
+  };
   return (
     <div className="nav">
       <div className="nav_wrapper">
@@ -24,9 +47,9 @@ const Nav = () => {
           </Link>
         </div>
         <ul className='nav_collection'>
-          <li><Link to="/">Asosiy</Link></li>
-          <li><Link to="/product">Mahsulotlar</Link></li>
-          <li><Link to="/about">Biz haqimizda</Link></li>
+          <li><NavLink to="/">{t("Name")}</NavLink></li>
+          <li><NavLink to="/product">{t("mahsulot")}</NavLink></li>
+          <li><NavLink to="/about">Biz haqimizda</NavLink></li>
           <li><a onClick={handleClick.bind(null, "#showroom")} href="#showroom">Ko'rgazmalar</a></li>
           <li><a onClick={handleClick.bind(null, "#partner")} href="#partner">Hamkorlar</a></li>
           <li><a onClick={handleClick.bind(null, "#contact")} href="#contact">Bog'lanish</a></li>
@@ -43,11 +66,8 @@ const Nav = () => {
             </div>
           </li>
           <li>
-            <select className='langSelect'>
-              <option value="uz">uz</option>
-              <option value="ru">ru</option>
-              <option value="eng">eng</option>
-            </select>
+            
+            <LanguageSet/>
           </li>
           <li>
             <a href="tel: +998995244698">
