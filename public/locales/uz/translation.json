@@ -25,6 +25,7 @@
     "taxminiy_hajmi": "Paketning taxminiy hajmi",
     "Paket_miqdori": "Paket miqdori",
     "Sertifikat": "Sertifikat №1",
+    "offer_download": "Yuklab olish",
 
     "Katalogni_yuklab_olish": "Katalogni yuklab olish",
 
@@ -36,5 +37,54 @@
     "Konstruktorlar": "Konstruktorlar",
     "Qizlar_uchun_oyinchoqlar": "Qizlar uchun o'yinchoq",
     "Sport_oyinchoqlari": "Sport o'yinchoqlari",
-    "Argimchoqlar": "Arg'imchoqlar"
+    "Argimchoqlar": "Arg'imchoqlar",
+
+    "dinoSpan": "Biz haqimizda",
+    "dinoh1": "Mo'jizaviy o'yinchoqlar ixtirochilari",
+    "dino__txt_p": "Kompaniya 2009-yilda tashkil etilgan bo‘lib, hozirda yuzlab o‘yinchoqlar ishlab chiqarilmoqda. Korxona bolalar uchun turli turdagi plastik o‘yinchoqlar ishlab chiqaradi va ularni butun dunyoga eksport qiladi. O‘yinchoqlar zamonaviy texnologiyalar yordamida yuqori sifatli plastmassadan tayyorlangan.",
+
+    "counter_span": "infografika",
+    "counterh1": "Raqamlardagi statistika",
+    "counter_card_p1": "Mahsulot turlari",
+    "counter_card_p2": "O'yinchoqlar ishlab chiqarish tajribasi",
+    "counter_card_p3": "Mutaxassislar soni",
+    "counter_card_p4": "Eksport qilinadigan davlat",
+    "counter_text": "Korxonaga asos solinganiga 13 yil bo'ldi. Korxonada 100 dan ziyod mutaxasislar faoliyat yuritishmoqda. Korxona shu kungacha 350 ortiq turdagi o'yinchoqlarni ishlab chiqarib kelmoqda va 7 dan ziyod mamlakatlar bilan eksportni yo'lga qo'ygan",
+
+    "protses_span": "Jarayon",
+    "protses_h1": "Biz o'yinchoqlarni qanday ishlab chiqaramiz",
+    "protses_right1": "Yuqori sifatli plastik xom ashyo (propellium, polietilen)ni xarid qilinadi",
+    "protses_right2": "Bolalar xavfsizligi uchun xom ashyo maxsus jihozlar yordamida qaytadan tozalanadi",
+    "protses_right3": "Mahsulot uchun kerakli qoliplar mexaniklar yordamida mashinalarga joylanadi",
+    "protses_right4": "Mashinalarda ishlash uchun yetarli ishchi kuchini yollanadi",
+    "protses_right5": "Mahsulotni sifatli chiqarish maqsadida, mashinaning funktsiyalarini sozlanadi",
+    "protses_right6": "Mashinalar kerakli haroratda ishga tushadi",
+    "protses_left1": "Tayyor bo'lgan mahsulotlarni karton qutilarga joylab, omborxonaga yuboriladi",
+    "protses_left2": "Har bir mahsulot yuqori sifatda qadoqlanadi",
+    "protses_left3": "Mahsulotga bezak berish maqsadida bezak-yopishtirgichlar yopishtiriladi",
+    "protses_left4": "Mahsulotning detallari yig'uvchilar tomonidan sifatli tarzda yig'iladi",
+    "protses_left5": "Mahsulotning sifati korxona sifat nazoratchisi orqali sinovdan o'tadi va yig'uv jarayoni uchun yuboriladi",
+    "protses_left6": "Mahsulot ishlab chiqarish jarayonini nazorat qilib turiladi hamda yaroqsiz chiqgan mahsulotlarni olib tashlanadi",
+
+    "export_span": "Biz dunyodamiz!",
+    "expost_h1": "Biz qayerga eksport qilamiz?",
+    "export_p": "Korxona sifatli o'yinchoqlar ishlab chiqarish orqali ko'plab davlatlar orasida taniqli bo'lib, eksport davlatlar soni 7 dan ortdi. Ulardan Rossiya, Qozog'iston, Qirg'ziston, Tojikiston, Gruziya va Ozarbayjon davlatlari bilan manfaatli aloqalar tez - tez amalga oshirilib turiladi",
+
+    "showroom_span": "360 darajada ko'ring",
+    "showroom_h1": "Ko'rgazmalar",
+    "showroom_btn1": "Ko'rgazma zalini ko'rish",
+    "showroom_btn2": "Zavodni ko'rish",
+    "partner_span": "ishonchdagi",
+    "partner_h1": "Hamkorlar",
+
+    "contact_h1": "Savollaringiz bormi? Biz sizga qo'ng'iroq qilamiz",
+    "contact_btn": "Yuborish",
+    "contact_input": "ismingiz",
+    "contact_placeholder": "izoh",
+    "contactOpen": "Jo'natildi",
+
+    "social_p": "Ijtimoiy tarmoqlarimizga obuna bo'ling va so'nggi yangiliklardan xabardor bo'ling!",
+    "adress_p": "Har kuni soat 9:00 dan 20:00 gacha",
+    "text_p": "Toshkent shahri, Olmazor tumani, Qorasaroy ko‘chasi 3-uy"
+
 }

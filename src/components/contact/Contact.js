@@ -1,8 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
+import { useTranslation } from "react-i18next";
+
 import './Contact.css';
 
 const Contact = () => {
 
+    const { t } = useTranslation();
     const [opencontact, setOpencontact] = useState(false);
 
 
@@ -67,20 +70,20 @@ const Contact = () => {
     return (
         <div className='contact' id='contact'>
             <form onSubmit={sendContentForm}>
-                <h1>Savollaringiz bormi? Biz sizga qo'ng'iroq qilamiz</h1>
+                <h1>{t("contact_h1")}</h1>
                 <div className="row">
                     <input ref={contactInput1} type="email" placeholder='E-mail' name='number' required />
-                    <input ref={contactInput2} type="text" placeholder='ismingiz' name='name' className='clear' />
+                    <input ref={contactInput2} type="text" placeholder={t("contact_input")} name='name' className='clear' />
                 </div>
-                <textarea ref={message} name="comment" id="" cols="30" rows="10" placeholder='izoh'></textarea>
-                <button onClick={sendContent}>yuborish</button>
+                <textarea ref={message} name="comment" id="" cols="30" rows="10" placeholder={t("contact_placeholder")}></textarea>
+                <button onClick={sendContent}>{t("contact_btn")}</button>
             </form>
 
             <div className={opencontact ? "contactOpen active" : "contactOpen"} onClick={()=> setOpencontact(false)}>
                 <div className="contactOpen_wrapper child">
                     <img className='child' src="https://therepublicoftoys.uz/img/home/check.png" alt="" />
                     <h1 className='child'>
-                        Jonatildi!
+                        {t("contactOpen")}
                     </h1>
                 </div>
             </div>

@@ -1,35 +1,39 @@
 import React from 'react';
 import './Protsess.css';
+import { useTranslation } from "react-i18next";
+
 import tree from '../assets/tree.svg';
 
 const Protsess = () => {
+    const { t } = useTranslation();
+
   return (
     <div className='protsess'>
         <div className="protsess_title">
-            <span>Jarayon</span>
-            <h1>Biz o'yinchoqlarni qanday ishlab chiqaramiz</h1>
+            <span>{("protses_span")}</span>
+            <h1>{("protses_h1")}</h1>
             <hr className='productHr' />
         </div>
         <div className="body_protsess">
             
             <div className="protsess_column align_right">
-                <p>Yuqori sifatli plastik xom ashyo (propellium, polietilen)ni xarid qilinadi</p>
-                <p>Bolalar xavfsizligi uchun xom ashyo maxsus jihozlar yordamida qaytadan tozalanadi</p>
-                <p>Mahsulot uchun kerakli qoliplar mexaniklar yordamida mashinalarga joylanadi</p>
-                <p>Mashinalarda ishlash uchun yetarli ishchi kuchini yollanadi</p>
-                <p>Mahsulotni sifatli chiqarish maqsadida, mashinaning funktsiyalarini sozlanadi</p>
-                <p>Mashinalar kerakli haroratda ishga tushadi</p>
+                <p>{t("protses_right1")}</p>
+                <p>{t("protses_right2")}</p>
+                <p>{t("protses_right3")}</p>
+                <p>{t("protses_right4")}</p>
+                <p>{t("protses_right5")}</p>
+                <p>{t("protses_right6")}</p>
             </div>
             <div className="img__protsess">
                 <img src={tree} alt="protsess imae" />
             </div>
             <div className="protsess_column align_left">
-                <p>Tayyor bo'lgan mahsulotlarni karton qutilarga joylab, omborxonaga yuboriladi</p>
-                <p>Har bir mahsulot yuqori sifatda qadoqlanadi</p>
-                <p>Mahsulotga bezak berish maqsadida bezak-yopishtirgichlar yopishtiriladi</p>
-                <p>Mahsulotning detallari yig'uvchilar tomonidan sifatli tarzda yig'iladi</p>
-                <p>Mahsulotning sifati korxona sifat nazoratchisi orqali sinovdan o'tadi va yig'uv</p>
-                <p>Mahsulot ishlab chiqarish jarayonini nazorat qilib turiladi hamda yaroqsiz chiqgan mahsulotlarni olib tashlanadi</p>
+                <p>{t("protses_left1")}</p>
+                <p>{t("protses_left2")}</p>
+                <p>{t("protses_left3")}</p>
+                <p>{t("protses_left4")}</p>
+                <p>{t("protses_left5")}</p>
+                <p>{t("protses_left6")}</p>
             </div>
         </div>
     </div>

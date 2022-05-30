@@ -85,7 +85,6 @@ const OfferPage = ({ products }) => {
         </div>
         <div className='item__offer sp__around'>
           <h1>{t("item_offer_h1")}</h1>
-          {/* <h1>salomassd asdkjh asdkj h</h1> */}
           <table>
             <tbody>
               <tr>
@@ -164,7 +163,7 @@ const OfferPage = ({ products }) => {
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
-                  <a href={`https://api.dev.therepublicoftoys.uz/${product.file}`} download target="blank" className='sp__aroundBtn'>Yuklab olish</a>
+                  <a href={`https://api.dev.therepublicoftoys.uz/${product.file}`} download target="blank" className='sp__aroundBtn'>{t("offer_download")}</a>
                 </td>
               </tr>
               <tr>

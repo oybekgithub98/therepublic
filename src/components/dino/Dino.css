@@ -72,10 +72,10 @@ a {
 }
 
 .dino__txt__body {
-    padding-top: 100px;
+    padding-top: 130px;
     line-height: 1.9vw;
     font-size: 1.2vw;
-    color: #fff
+    color: #fff;
 }
 
 .dino_btn {

@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 
 import './Dino.css';
 
 const Dino = () => {
+    const { t } = useTranslation();
+
     return (
         <div className='dino'>
             <div className="dino_wrapper">
@@ -12,16 +15,16 @@ const Dino = () => {
                 </div>
                 <div className="dino_text">
                     <div className="dino_title">
-                        <span>Biz haqimizda</span>
-                        <h1>Mo'jizaviy o'yinchoqlar ixtirochilari</h1>
+                        <span>{t("dinoSpan")}</span>
+                        <h1>{t("dino")}</h1>
                         <hr />
                     </div>
                     <div className="dino__txt__body">
                         <p>
-                            Kompaniya 2009-yilda tashkil etilgan bo‘lib, hozirda yuzlab o‘yinchoqlar ishlab chiqarilmoqda. Korxona bolalar uchun turli turdagi plastik o‘yinchoqlar ishlab chiqaradi va ularni butun dunyoga eksport qiladi. O‘yinchoqlar zamonaviy texnologiyalar yordamida yuqori sifatli plastmassadan tayyorlangan.
+                            {t("dino__txt_p")}
                         </p>
                         <Link to='/about'>
-                            <button  className="dino_btn">Batafsil
+                            <button  className="dino_btn">{t("Batafsil")}
                                 <img src="https://therepublicoftoys.uz/img/home/cardar.svg" alt="" />
                             </button>
                         </Link>

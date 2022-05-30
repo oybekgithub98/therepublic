@@ -1,10 +1,13 @@
 import { useState } from 'react';
-import './Showroom.css'
 import Slider from "react-slick";
-import { MdClose } from 'react-icons/md'
+import { MdClose } from 'react-icons/md';
+import { useTranslation } from "react-i18next";
+
+import './Showroom.css';
 
 const Showroom = () => {
 
+    const { t } = useTranslation();
     const [isModelOpen, setIsModelOpen] = useState(false);
     const [activeCard, setActiveCard] = useState(null);
 
@@ -19,8 +22,8 @@ const Showroom = () => {
             <div className="showroom_wrapper">
                 <div className="farm">
                     <div className="showroom_title">
-                        <span>360 darajada ko'ring</span>
-                        <h1>Ko'rgazmalar</h1>
+                        <span>{t("showroom_span")}</span>
+                        <h1>{t("showroom_h1")}</h1>
                         <hr />
                     </div>
                     <div className="showroom_container">
@@ -29,14 +32,14 @@ const Showroom = () => {
                                 <img src="https://therepublicoftoys.uz/img/home/farm1.png" alt="" />
                                 <button onClick={activateModal.bind(null, 1)}>
                                     <img src="https://therepublicoftoys.uz/img/home/360.svg" alt="" />
-                                    Ko'rgazma zalini ko'rish
+                                    {t("showroom_btn1")}
                                 </button>
                             </div>
                             <div className="item">
                                 <img src="https://therepublicoftoys.uz/img/home/farm2.png" alt="" />
                                 <button onClick={activateModal.bind(null, 2)}>
                                     <img src="https://therepublicoftoys.uz/img/home/360.svg" alt="" />
-                                    Ko'rgazma zalini ko'rish
+                                    {t("showroom_btn2")}
                                 </button>
                             </div>
                             <div className={isModelOpen ? 'active dublItemClick' : 'dublItemClick'}>
@@ -49,8 +52,8 @@ const Showroom = () => {
                         <div className="partner" id="partner">
                             <div className="partner_product">
                                 <div className="partner_title">
-                                    <span>ishonchdagi</span>
-                                    <h1>Hamkorlar</h1>
+                                    <span>{t("partner_span")}</span>
+                                    <h1>{t("partner_h1")}</h1>
                                     <hr />
                                 </div>
                                 <div className="partner_body">

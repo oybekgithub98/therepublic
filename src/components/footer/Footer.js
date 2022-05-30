@@ -1,7 +1,11 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
+
 import './Footer.css';
 
 const Footer = () => {
+    const { t } = useTranslation();
+
   return (
     <div className='footer'>
         <div className="footer_wrapper">
@@ -11,7 +15,7 @@ const Footer = () => {
             </a>
         </div>
         <div className="social">
-            <p>Ijtimoiy tarmoqlarimizga obuna bo'ling va so'nggi yangiliklardan xabardor bo'ling!</p>
+            <p>{t("social_p")}</p>
             <div className="networking">
                 <a href=""><img src="https://therepublicoftoys.uz/img/footer/telegram.svg" alt="" /></a>
                 <a href=""><img src="https://therepublicoftoys.uz/img/footer/facebook.svg" alt="" /></a>
@@ -23,13 +27,13 @@ const Footer = () => {
                 <img src="https://therepublicoftoys.uz/img/footer/call.svg" alt="" />
                 <div className='text'>
                     <h3>+998 (71) 248-34-94</h3>
-                    <p>Har kuni soat 9:00 dan 20:00 gacha</p>
+                    <p>{t("adress_p")}</p>
                 </div>
             </div>
             <div className="row">
                 <img src="https://therepublicoftoys.uz/img/footer/loca.svg" alt="" />
                 <div className='text'>
-                    <p>Toshkent shahri, Olmazor tumani, Qorasaroy ko‘chasi 3-uy</p>
+                    <p>{t("text_p")}</p>
                 </div>
             </div>
         </div>

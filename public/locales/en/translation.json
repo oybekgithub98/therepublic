@@ -25,6 +25,7 @@
     "taxminiy_hajmi": "Approximate package size",
     "Paket_miqdori": "Package quantity",
     "Sertifikat": "Certificate No. 1",
+    "offer_download": "download",
 
     "Katalogni_yuklab_olish": "Download catalog",
 
@@ -36,5 +37,54 @@
     "Konstruktorlar": "Constructors",
     "Qizlar_uchun_oyinchoqlar": "Toys for girls",
     "Sport_oyinchoqlari": "Sport toys",
-    "Argimchoqlar": "Swings for paddles"
+    "Argimchoqlar": "Swings for paddles",
+
+    "dinoSpan": "About us",
+    "dinoh1": "Inventors of miraculous toys",
+    "dino__txt_p": "The company was founded in 2009 and now produces hundreds of toys. The company manufactures various kinds of plastic toys for children and also exports them all over the world. The toys are made of high quality plastic using modern technology.",
+
+    "counter_span": "infographics",
+    "counterh1": "Statistics in numbers",
+    "counter_card_p1": "Type of products",
+    "counter_card_p2": "Experience in the production of toys",
+    "counter_card_p3": "Number of specialists",
+    "counter_card_p4": "Exportable countries",
+    "counter_text": "It has been 13 years since the company was founded. The company employs more than 100 specialists. To date, the company produces more than 350 types of toys and exports to 7 countries",
+
+    "protses_span": "Process",
+    "protses_h1": "How do we make toys",
+    "protses_right1": "High-quality plastic raw materials are purchased (propellium, polyethylene)",
+    "protses_right2": "For the safety of children, raw materials are re-cleaned using special equipment",
+    "protses_right3": "The necessary forms for the product are placed on the machines with the help of mechanics",
+    "protses_right4": "Sufficient manpower is hired to work on the machines",
+    "protses_right5": "In order to produce a quality product, the functions of the machine will be adjusted",
+    "protses_right6": "The machines start at the desired temperature",
+    "protses_left1": "The machines start at the required temperature and",
+    "protses_left2": "Each product is packed in high quality packaging",
+    "protses_left3": "The necessary labor force is hired to work on the machines",
+    "protses_left4": "Product details are collected by collectors with high quality",
+    "protses_left5": "The quality of the products is checked by the quality controller of the enterprise and sent to the assembly",
+    "protses_left6": "The production process is monitored and defective products are removed",
+
+    "export_span": "We are in the world!",
+    "expost_h1": "Where do we export?",
+    "export_p": "The enterprise is well-known among many countries through the production of quality toys, and the number of exporting countries has exceeded 7. Among them are mutually beneficial relations with Russia, Kazakhstan, Kyrgyzstan, Tajikistan, Georgia and Azerbaijan.",
+
+    "showroom_span": "See 360 degrees",
+    "showroom_h1": "Showroom",
+    "showroom_btn1": "View showroom",
+    "showroom_btn2": "View the factory",
+    "partner_span": "our trusted",
+    "partner_h1": "Partners",
+
+    "contact_h1": "Any questions? We will call you back",
+    "contact_btn": "Send",
+    "contact_input": "Name",
+    "contact_placeholder": "Message",
+    "contactOpen": "Sent",
+
+    "social_p": "Subscribe to our social networks and stay up to date with the latest news!",
+    "adress_p": "Everyday from 9:00 am to 20:00 pm",
+    "text_p": "Tashkent city, Olmazor district, Karasaray - street. 3"
+    
 }
