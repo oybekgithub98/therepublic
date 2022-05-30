@@ -2,10 +2,12 @@ import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 import { useParams, Link } from "react-router-dom";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next"
 
 import './OfferPage.css';
 
 const OfferPage = ({ products }) => {
+  const { t } = useTranslation();
   const [product, setProduct] = useState(null)
   const [isDataFetching, setIsDataFetching] = useState(false)
   const { id: productId } = useParams();
@@ -82,19 +84,20 @@ const OfferPage = ({ products }) => {
           </div>
         </div>
         <div className='item__offer sp__around'>
-          <h1>Plastic toy set "Large house"</h1>
+          <h1>{t("item_offer_h1")}</h1>
+          {/* <h1>salomassd asdkjh asdkj h</h1> */}
           <table>
             <tbody>
               <tr>
                 <td>
-                  <span>Artikul</span>
+                  <span>{t("artikul")}</span>
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>{product.articul}</td>
               </tr>
               <tr>
                 <td>
-                  <span>EAN-13</span>
+                  <span>{t("EAN-13")}</span>
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
@@ -103,7 +106,7 @@ const OfferPage = ({ products }) => {
               </tr>
               <tr>
                 <td>
-                  <span>Yig'ilgan o'yinchoq o'lchami</span>
+                  <span>{t("o'yinchoq_o'lchami")}</span>
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
@@ -112,7 +115,7 @@ const OfferPage = ({ products }) => {
               </tr>
               <tr>
                 <td>
-                  <span>Qadoqlash turi</span>
+                  <span>{t("Qadoqlash_turi")}</span>
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
@@ -121,7 +124,7 @@ const OfferPage = ({ products }) => {
               </tr>
               <tr>
                 <td>
-                  <span>Paket hajmi</span>
+                  <span>{t("Paket_hajmi")}</span>
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
@@ -130,7 +133,7 @@ const OfferPage = ({ products }) => {
               </tr>
               <tr>
                 <td>
-                  <span>Ko'p to'plam turi</span>
+                  <span>{t("toplam_turi")}</span>
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
@@ -139,7 +142,7 @@ const OfferPage = ({ products }) => {
               </tr>
               <tr>
                 <td>
-                  <span>Paketning taxminiy hajmi</span>
+                  <span>{t("taxminiy_hajmi")}</span>
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
@@ -148,7 +151,7 @@ const OfferPage = ({ products }) => {
               </tr>
               <tr>
                 <td>
-                  <span>Paket miqdori</span>
+                  <span>{t("Paket_miqdori")}</span>
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
@@ -157,7 +160,7 @@ const OfferPage = ({ products }) => {
               </tr>
               <tr>
                 <td>
-                  <span>Sertifikat №1</span>
+                  <span>{t("Sertifikat")}</span>
                   <img className='aroundImg' src="https://www.polesie-toys.com/static/img/icons/question.svg" alt="" />
                 </td>
                 <td>
@@ -204,7 +207,7 @@ const OfferPage = ({ products }) => {
                 <p>{title_uz}</p>
                 <span>{case_uz}</span>
                 <div className="hover__offer">
-                  <span>Подробнее</span>
+                  <span>{t("hover__offer_span")}</span>
                   <img src="https://therepublicoftoys.uz/img/home/cardar.svg" alt="" />
                 </div>
               </div>

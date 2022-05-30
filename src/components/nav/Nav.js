@@ -47,12 +47,12 @@ const Nav = () => {
           </Link>
         </div>
         <ul className='nav_collection'>
-          <li><NavLink to="/">{t("Name")}</NavLink></li>
+          <li><NavLink to="/">{t("asosiy")}</NavLink></li>
           <li><NavLink to="/product">{t("mahsulot")}</NavLink></li>
-          <li><NavLink to="/about">Biz haqimizda</NavLink></li>
-          <li><a onClick={handleClick.bind(null, "#showroom")} href="#showroom">Ko'rgazmalar</a></li>
-          <li><a onClick={handleClick.bind(null, "#partner")} href="#partner">Hamkorlar</a></li>
-          <li><a onClick={handleClick.bind(null, "#contact")} href="#contact">Bog'lanish</a></li>
+          <li><NavLink to="/about">{t("haqimizda")}</NavLink></li>
+          <li><a onClick={handleClick.bind(null, "#showroom")} href="#showroom">{t("korgazmalar")}</a></li>
+          <li><a onClick={handleClick.bind(null, "#partner")} href="#partner">{t("hamkorlar")}</a></li>
+          <li><a onClick={handleClick.bind(null, "#contact")} href="#contact">{t("boglanish")}</a></li>
           <li>
             <div className="volume">
               <div className="upper">

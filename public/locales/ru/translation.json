@@ -1,4 +1,41 @@
 {
-    "Name":"russian",
-    "mahsulot": "prodakta"
+    "asosiy": "Главная",
+    "mahsulot": "Продукты",
+    "haqimizda": "О нас",
+    "korgazmalar": "Шоврум",
+    "hamkorlar": "Партнеры",
+    "boglanish": "Связаться с нами",
+
+    "homeSlider1": "безопасно и красиво",
+    "homeSlider2": "выбор вашиъ детей",
+    "homeSlider3": " Наслаждайтесь с нашими продуктами",
+    "Batafsil": "Подробнее",
+
+    "tabs_menu_h2": "категория",
+    "tabs_panel_h1": "Продукты",
+    "hover__offer_span": "Подробнее",
+
+    "item_offer_h1": "Plastic toy set Cookware",
+    "artikul": "Артикул",
+    "EAN-13": "EAN-13",
+    "o'yinchoq_o'lchami": "Размер игрушки в собранном виде",
+    "Qadoqlash_turi": "Вид упаковки",
+    "Paket_hajmi": "Размер в упаковке",
+    "toplam_turi": "Вид групповой упаковки",
+    "taxminiy_hajmi": "Примерный объем в упаковке",
+    "Paket_miqdori": "Количество в упаковке",
+    "Sertifikat": "Сертификат №1",
+
+    "Katalogni_yuklab_olish": "Скачать каталог",
+
+    "productSpan": "категория",
+    "producth1": "Продукты",
+
+    "Aqliy_rivojlanish_uchun_oyinchoqlar": "Игрушка для уморазвития",
+    "Avtomobillar": "Машинки",
+    "Konstruktorlar": "Конструкторы",
+    "Qizlar_uchun_oyinchoqlar": "Игрушка для девчонок",
+    "Sport_oyinchoqlari": "Спортивные игрушки",
+    "Argimchoqlar": "Качели для плашадок"
+   
 }

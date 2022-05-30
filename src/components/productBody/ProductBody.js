@@ -2,8 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "./ProductBody.css";
+import { useTranslation } from "react-i18next";
 
 const ProductBody = ({filterItems }) => {
+
+  const { t } = useTranslation();
   
   return (
     <div className="productBody">
@@ -22,7 +25,7 @@ const ProductBody = ({filterItems }) => {
                 alt=""
               />
             </Link>
-            <h5>Aqliy rivojlanish uchun o'yinchoqlar</h5>
+            <h5>{t("Aqliy_rivojlanish_uchun_oyinchoqlar")}</h5>
           </div>
           <div
             className="product_item"
@@ -34,7 +37,7 @@ const ProductBody = ({filterItems }) => {
                 alt=""
               />
             </Link>
-            <h5>Avtomobillar</h5>
+            <h5>{t("Avtomobillar")}</h5>
           </div>
           <div
             className="product_item"
@@ -46,7 +49,7 @@ const ProductBody = ({filterItems }) => {
                 alt=""
               />
             </Link>
-            <h5>Konstruktorlar</h5>
+            <h5>{t("Konstruktorlar")}</h5>
           </div>
           <div
             className="product_item"
@@ -58,7 +61,7 @@ const ProductBody = ({filterItems }) => {
                 alt=""
               />
             </Link>
-            <h5>Qizlar uchun o'yinchoqlar</h5>
+            <h5>{t("Qizlar_uchun_oyinchoqlar")}</h5>
           </div>
           <div
             className="product_item"
@@ -70,7 +73,7 @@ const ProductBody = ({filterItems }) => {
                 alt=""
               />
             </Link>
-            <h5>Sport o'yinchoqlari</h5>
+            <h5>{t("Sport_oyinchoqlari")}</h5>
           </div>
           <div
             className="product_item"
@@ -82,7 +85,7 @@ const ProductBody = ({filterItems }) => {
                 alt=""
               />
             </Link>
-            <h5>Argimchoqlar</h5>
+            <h5>{t("Argimchoqlar")}</h5>
           </div>
         </Slider>
       </div>

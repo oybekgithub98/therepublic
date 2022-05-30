@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import './Product.css';
+import { useTranslation } from "react-i18next"
+
 // import axios from "axios";
 
 const Product = ({products, filterItems, categories, activeCategory }) => {
+  const { t } = useTranslation();
   
   const [data, setdata] = useState([])
 
@@ -24,7 +27,7 @@ const Product = ({products, filterItems, categories, activeCategory }) => {
   {products?.length ? 
     <div className="react-tabs_wrapper">
       <div className="tabs_menu">
-        <h2>kategoriya</h2>
+        <h2>{t("tabs_menu_h2")}</h2>
         <ul className='tabs_collection' > {/* role="tablits" */}
           {
             categories.map((category, index) =>
@@ -36,7 +39,7 @@ const Product = ({products, filterItems, categories, activeCategory }) => {
         </ul>
       </div>
       <div className="tabs_panel">
-        <h1>Mahsulotlar</h1>
+        <h1>{t("tabs_panel_h1")}</h1>
         <div className="offers">
           {data?.length && 
            data?.map((menuItem) => {
@@ -48,7 +51,7 @@ const Product = ({products, filterItems, categories, activeCategory }) => {
                     <p>{title_uz}</p>
                     <span>{case_uz}</span>
                     <div className="hover__offer">
-                      <span>Подробнее</span>
+                      <span>{t("hover__offer_span")}</span>
                       <img src="https://therepublicoftoys.uz/img/home/cardar.svg" alt="" />
                     </div>
                   </div>

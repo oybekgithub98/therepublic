@@ -1,4 +1,40 @@
 {
-    "Name":"Uzbek",
-    "mahsulot": "mahsulot"
+    "asosiy": "Asosiy",
+    "mahsulot": "mahsulot",
+    "haqimizda": "Biz haqimizda",
+    "korgazmalar": "Ko'rgazmalar",
+    "hamkorlar": "Hamkorlar",
+    "boglanish": "Bog'lanish",
+
+    "homeSlider1": "Farzandlaringiz tanlovi",
+    "homeSlider2": "Mahsulotimizdan zavqlaning",
+    "homeSlider3": "Xavfsiz va bejirim",
+    "Batafsil": "Batafsil",
+
+    "tabs_menu_h2": "kategoriya",
+    "tabs_panel_h1": "Mahsulotlar",
+    "hover__offer_span": "Ko'proq",
+
+    "item_offer_h1": "Plastik o'yinchoqlar to'plami Idishlar",
+    "artikul": "artikul",
+    "EAN-13": "EAN-13",
+    "o'yinchoq_o'lchami": "Yig'ilgan o'yinchoq o'lchami",
+    "Qadoqlash_turi": "Qadoqlash turi",
+    "Paket_hajmi": "Paket hajmi",
+    "toplam_turi": "Ko'p to'plam turi",
+    "taxminiy_hajmi": "Paketning taxminiy hajmi",
+    "Paket_miqdori": "Paket miqdori",
+    "Sertifikat": "Sertifikat №1",
+
+    "Katalogni_yuklab_olish": "Katalogni yuklab olish",
+
+    "productSpan": "kategoriya",
+    "producth1": "Mahsulotlar",
+
+    "Aqliy_rivojlanish_uchun_oyinchoqlar": "Aqliy rivojlanish uchun oyinchoqlar",
+    "Avtomobillar": "Avtomobillar",
+    "Konstruktorlar": "Konstruktorlar",
+    "Qizlar_uchun_oyinchoqlar": "Qizlar uchun o'yinchoq",
+    "Sport_oyinchoqlari": "Sport o'yinchoqlari",
+    "Argimchoqlar": "Arg'imchoqlar"
 }

@@ -1,4 +1,40 @@
 {
-    "Name":"english",
-    "mahsulot": "product"
+    "asosiy": "Home",
+    "mahsulot": "Products",
+    "haqimizda": "About us",
+    "korgazmalar": "Showroom",
+    "hamkorlar": "Partners",
+    "boglanish": "Contact",
+
+    "homeSlider1": "Enjoy with our products",
+    "homeSlider2": "Safe and attractive",
+    "homeSlider3": "Choice of your children",
+    "Batafsil": "See more",
+
+    "tabs_menu_h2": "Category",
+    "tabs_panel_h1": "Products",
+    "hover__offer_span": "More",
+    
+    "item_offer_h1": "Plastic toy set Cookware",
+    "artikul": "Articul",
+    "EAN-13": "EAN-13",
+    "o'yinchoq_o'lchami": "Assembled toy size",
+    "Qadoqlash_turi": "Type of packaging",
+    "Paket_hajmi": "Package size",
+    "toplam_turi": "Multipack type",
+    "taxminiy_hajmi": "Approximate package size",
+    "Paket_miqdori": "Package quantity",
+    "Sertifikat": "Certificate No. 1",
+
+    "Katalogni_yuklab_olish": "Download catalog",
+
+    "productSpan": "Category",
+    "producth1": "Products",
+
+    "Aqliy_rivojlanish_uchun_oyinchoqlar": "Toy for mental development",
+    "Avtomobillar": "Cars",
+    "Konstruktorlar": "Constructors",
+    "Qizlar_uchun_oyinchoqlar": "Toys for girls",
+    "Sport_oyinchoqlari": "Sport toys",
+    "Argimchoqlar": "Swings for paddles"
 }

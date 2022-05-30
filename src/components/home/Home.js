@@ -9,12 +9,12 @@ import Product from '../product/Product';
 import Protsess from '../protsess/Protsess';
 import Showroom from '../showroom/Showroom';
 import { Link } from 'react-router-dom';
-
+import { useTranslation } from "react-i18next"
 
 import "./Home.css";
 
 const Home = ({filterItems}) => {
-
+  const { t } = useTranslation();
   const [nav2, setNav2] = useState();
 
   useEffect(() => {
@@ -29,8 +29,8 @@ const Home = ({filterItems}) => {
         <Slider className="mainSlider" asNavFor={nav2}>
           <div className="swiper_item">
             <div className="swiper_text">
-              <h1>Havfsiz va bejirim</h1>
-              <Link to="/product" className="swiper_btn"><span>Batafsil</span>
+              <h1>{t('homeSlider1')}</h1>
+              <Link to="/product" className="swiper_btn"><span>{t("Batafsil")}</span>
                 <img src="https://therepublicoftoys.uz/static/media/btnarrow.a886bf66.svg" alt="" />
               </Link>
             </div>
@@ -43,8 +43,8 @@ const Home = ({filterItems}) => {
           </div>
           <div className="swiper_item">
             <div className="swiper_text">
-              <h1>Farzandlaringiz tanlovi</h1>
-              <Link to="/product" className="swiper_btn"><span>Batafsil</span>
+              <h1>{t('homeSlider2')}</h1>
+              <Link to="/product" className="swiper_btn"><span>{t("Batafsil")}</span>
                 <img src="https://therepublicoftoys.uz/static/media/btnarrow.a886bf66.svg" alt="" />
               </Link>
             </div>
@@ -57,8 +57,8 @@ const Home = ({filterItems}) => {
           </div>
           <div className="swiper_item">
             <div className="swiper_text">
-              <h1>Mahsulotlarimizdan zavqlaning</h1>
-              <Link to="/product" className="swiper_btn"><span>Batafsil</span>
+              <h1>{t('homeSlider3')}</h1>
+              <Link to="/product" className="swiper_btn"><span>{t("Batafsil")}</span>
                 <img src="https://therepublicoftoys.uz/static/media/btnarrow.a886bf66.svg" alt="" />
               </Link>
             </div>
