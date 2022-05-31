@@ -1,9 +1,10 @@
 import React, {useEffect} from 'react'
-import './Nav.css';
 import { useTranslation } from "react-i18next"
 
 import { FiVolume2 } from 'react-icons/fi';
 import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
+
+import './Nav.css';
 
 const Nav = () => {
   const { t, i18n, ready } = useTranslation();

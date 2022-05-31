@@ -16,7 +16,7 @@ const Dino = () => {
                 <div className="dino_text">
                     <div className="dino_title">
                         <span>{t("dinoSpan")}</span>
-                        <h1>{t("dino")}</h1>
+                        <h1>{t("dinoh1")}</h1>
                         <hr />
                     </div>
                     <div className="dino__txt__body">

@@ -9,7 +9,7 @@ import tabsData from './components/assets/data';
 import './App.css';
 import OfferPage from './components/link/offerPage/OfferPage';
 import AboutPage from './components/aboutPage/AboutPage';
-// import { useTranslation } from "react-i18next"
+import ScrollArrow from './components/scrollArrow/ScrollArrow';
 
 // const allCategories = ['All', ...new Set(tabsData.map((item) => item.category))]
 const allCategories = ["All", "плашадок", "Спортивные", "девчонок", "Конструкторы", "Машинки", "уморазвития"]
@@ -21,6 +21,7 @@ function App() {
   const [categories, setCategories] = useState(allCategories);
   const [activeCategory, setActiveCategory] = useState("")
   const [products, setProducts] = useState([])
+
  
 
   useEffect(()=>{
@@ -42,6 +43,7 @@ function App() {
     
     setActiveCategory(category)
   }
+  
 
   return (
     <div className="app">
@@ -53,6 +55,7 @@ function App() {
         <Route path="/product/:id" element={<OfferPage products={products} />}/>
       </Routes>
       <Footer />
+      <ScrollArrow />
     </div>
   );
 }

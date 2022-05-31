@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next"
 
 import "./Home.css";
 
-const Home = ({filterItems}) => {
+const Home = ({ filterItems }) => {
   const { t } = useTranslation();
   const [nav2, setNav2] = useState();
 
@@ -24,7 +24,6 @@ const Home = ({filterItems}) => {
 
   return (
     <>
-
       <div className="swiper" style={{ padding: "0 30px", }}>
         <Slider className="mainSlider" asNavFor={nav2}>
           <div className="swiper_item">
@@ -69,14 +68,15 @@ const Home = ({filterItems}) => {
         </Slider>
       </div>
 
-    <DownloadCat />
-    <Product filterItems={filterItems}/>
-    <Dino />
-    <OnCounter />
-    <Protsess />
-    <Export />
-    <Showroom />
-    <Contact />
+      <DownloadCat />
+      <Product filterItems={filterItems} />
+      <Dino />
+      <OnCounter />
+      <Protsess />
+      <Export />
+      <Showroom />
+      <Contact />
+    
     </>
   )
 }

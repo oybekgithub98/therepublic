@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
 import './Footer.css';
@@ -10,16 +11,16 @@ const Footer = () => {
     <div className='footer'>
         <div className="footer_wrapper">
         <div className="logo">
-            <a href="#">
+            <Link to="/">
                 <img src="https://therepublicoftoys.uz/img/footer/logo.svg" alt="" />
-            </a>
+            </Link>
         </div>
         <div className="social">
             <p>{t("social_p")}</p>
             <div className="networking">
-                <a href=""><img src="https://therepublicoftoys.uz/img/footer/telegram.svg" alt="" /></a>
-                <a href=""><img src="https://therepublicoftoys.uz/img/footer/facebook.svg" alt="" /></a>
-                <a href=""><img src="https://therepublicoftoys.uz/img/footer/igram.svg" alt="" /></a>
+                <a href="https://t.me/therepublicoftoys" target="blank"><img src="https://therepublicoftoys.uz/img/footer/telegram.svg" alt="" /></a>
+                <a href="https://www.facebook.com/Polimer-Plastik_uz-106158995132744/" target="blank"><img src="https://therepublicoftoys.uz/img/footer/facebook.svg" alt="" /></a>
+                <a href="https://www.instagram.com/polimerplastikuz/?utm_medium=copy_link" target="blank"><img src="https://therepublicoftoys.uz/img/footer/igram.svg" alt="" /></a>
             </div>
         </div>
         <div className="adress">

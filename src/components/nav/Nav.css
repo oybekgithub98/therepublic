@@ -7,7 +7,39 @@
 }
 
 .nav_collection .active {
-  color: red;
+  position: relative;
+  z-index: 10;
+  color: white;
+}
+
+.nav_collection .active::after {
+    width: 7vw;
+    height: 15vw;
+    background-color: #ffa723;
+    position: absolute;
+    content: "";
+    top: -12vw;
+    border-radius: 10vw;
+    left: -1vw;
+    animation: forbefor .4s both;
+    z-index: -1;
+}
+
+@-webkit-keyframes forbefor {
+  from {
+    top: -21vw;
+  }
+  to {
+    top: -12vw;
+  }
+}
+@keyframes forbefor {
+  from {
+    top: -21vw;
+  }
+  to {
+    top: -12vw;
+  }
 }
 
 .nav_wrapper {
@@ -42,6 +74,7 @@
 .nav_collection > li > a {
   color: #fff;
   text-decoration: none;
+  z-index: 30;
 }
 
 .langSelect {
