@@ -22,7 +22,7 @@
      
 }
 
-a:hover {
+.scrollBar a:hover {
     transform: scale(0.9);
 }
 

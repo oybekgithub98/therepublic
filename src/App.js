@@ -54,8 +54,8 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/product/:id" element={<OfferPage products={products} />}/>
       </Routes>
-      <Footer /> */}
-      {/* <ScrollArrow /> */}
+      <Footer />
+      <ScrollArrow /> */}
     </div>
   );
 }

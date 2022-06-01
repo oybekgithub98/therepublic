@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useTranslation } from "react-i18next"
 
 import { FiVolume2 } from 'react-icons/fi';
@@ -7,11 +7,13 @@ import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import './Nav.css';
 
 const Nav = () => {
+
   const { t, i18n, ready } = useTranslation();
-  const [volume, setVolume] = React.useState(50);
-  const [language, setLanguage] = React.useState("uz")
+  const [volume, setVolume] = useState(50);
+  const [language, setLanguage] = useState("uz");
   const location = useLocation();
   const navigate = useNavigate();
+  const [homburger, setHomburger] = useState(false);
 
 
   useEffect(() => {
@@ -39,6 +41,11 @@ const Nav = () => {
       );
     }
   };
+
+  const hamburger = () => {
+    setHomburger(!homburger)
+  }
+
   return (
     <div className="nav">
       <div className="nav_wrapper">
@@ -47,13 +54,13 @@ const Nav = () => {
             <img src="https://therepublicoftoys.uz/img/nav/logo.svg" alt="" />
           </Link>
         </div>
-        <ul className='nav_collection'>
-          <li><NavLink to="/">{t("asosiy")}</NavLink></li>
-          <li><NavLink to="/product">{t("mahsulot")}</NavLink></li>
-          <li><NavLink to="/about">{t("haqimizda")}</NavLink></li>
-          <li><a onClick={handleClick.bind(null, "#showroom")} href="#showroom">{t("korgazmalar")}</a></li>
-          <li><a onClick={handleClick.bind(null, "#partner")} href="#partner">{t("hamkorlar")}</a></li>
-          <li><a onClick={handleClick.bind(null, "#contact")} href="#contact">{t("boglanish")}</a></li>
+        <ul className={homburger ? "nav_collection active" : "nav_collection"}>
+          <li onClick={hamburger}><NavLink to="/">{t("asosiy")}</NavLink></li>
+          <li onClick={hamburger}><NavLink to="/product">{t("mahsulot")}</NavLink></li>
+          <li onClick={hamburger}><NavLink to="/about">{t("haqimizda")}</NavLink></li>
+          <li onClick={hamburger}><a onClick={handleClick.bind(null, "#showroom")} href="#showroom">{t("korgazmalar")}</a></li>
+          <li onClick={hamburger}><a onClick={handleClick.bind(null, "#partner")} href="#partner">{t("hamkorlar")}</a></li>
+          <li onClick={hamburger}><a onClick={handleClick.bind(null, "#contact")} href="#contact">{t("boglanish")}</a></li>
           <li>
             <div className="volume">
               <div className="upper">
@@ -67,10 +74,9 @@ const Nav = () => {
             </div>
           </li>
           <li>
-
             <LanguageSet />
           </li>
-          <li>
+          <li onClick={hamburger}>
             <a href="tel: +998995244698">
               <button className='nav_button' type='role'>
                 <img src="https://therepublicoftoys.uz/img/nav/call.svg" alt="" />
@@ -79,7 +85,7 @@ const Nav = () => {
             </a>
           </li>
         </ul>
-        <div class="hamb">
+        <div class="hamb" onClick={hamburger}>
           <span>
             <img src="https://therepublicoftoys.uz/img/home/hamb.svg" alt="toys" />
           </span>
