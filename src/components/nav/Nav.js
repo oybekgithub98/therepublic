@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { useTranslation } from "react-i18next"
 
 import { FiVolume2 } from 'react-icons/fi';
@@ -14,16 +14,16 @@ const Nav = () => {
   const navigate = useNavigate();
 
 
-  useEffect(()=>{
+  useEffect(() => {
     i18n.changeLanguage(language)
   }, [language])
 
   const changeLanguage = (e) => {
     setLanguage(e.target.value)
   };
-  
-  const handleClick = (endpoint) =>{
-    if(location?.pathname){
+
+  const handleClick = (endpoint) => {
+    if (location?.pathname) {
       navigate("/")
     }
   }
@@ -32,10 +32,10 @@ const Nav = () => {
     if (ready) {
       return (
         <select className='langSelect' value={language} onChange={changeLanguage}>
-        <option  value="en">en</option>
-        <option  value="uz">uz</option>
-        <option  value="ru">ru</option>
-      </select>
+          <option value="en">en</option>
+          <option value="uz">uz</option>
+          <option value="ru">ru</option>
+        </select>
       );
     }
   };
@@ -57,18 +57,18 @@ const Nav = () => {
           <li>
             <div className="volume">
               <div className="upper">
-                <FiVolume2 className='volume_icon'/>
-                <input defaultValue={volume} min={0} max={100} onChange={(e)=> {
-                    setVolume(e.target.value)
-                    console.log(e);
-                }} type="range" className='volume_input'/>
+                <FiVolume2 className='volume_icon' />
+                <input defaultValue={volume} min={0} max={100} onChange={(e) => {
+                  setVolume(e.target.value)
+                  console.log(e);
+                }} type="range" className='volume_input' />
                 {/* <p>{volume}</p>  */}
               </div>
             </div>
           </li>
           <li>
-            
-            <LanguageSet/>
+
+            <LanguageSet />
           </li>
           <li>
             <a href="tel: +998995244698">
@@ -79,10 +79,15 @@ const Nav = () => {
             </a>
           </li>
         </ul>
+        <div class="hamb">
+          <span>
+            <img src="https://therepublicoftoys.uz/img/home/hamb.svg" alt="toys" />
+          </span>
+        </div>
       </div>
     </div>
 
-    
+
   )
 }
 
