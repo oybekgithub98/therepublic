@@ -70,12 +70,12 @@ const Home = ({ filterItems }) => {
 
       <DownloadCat />
       <Product filterItems={filterItems} />
-      <Dino />
+      {/*<Dino />
       <OnCounter />
       <Protsess />
       <Export />
       <Showroom />
-      <Contact />
+      <Contact /> */}
     
     </>
   )
