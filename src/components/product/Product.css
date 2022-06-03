@@ -56,6 +56,10 @@
 
 @media screen and (max-width: 767px) {
     .product_title {
+        background-image: none;
+    }
+
+    .product_title {
         padding: 30px 0;
     }
 

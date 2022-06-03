@@ -1,0 +1,23 @@
+  // const [isMobileSize, setIsMobileSize] = React.useState(5);
+  
+  // React.useEffect(() => {
+  //   window.onresize = () => {
+
+  //     if (window.innerWidth > 300) {
+  //       setIsMobileSize(1);
+  //     } else if(window.innerWidth > 700) {
+  //       setIsMobileSize(2);
+  //     } else {
+  //       setIsMobileSize(5);
+  //     }
+
+  //     switch (window.innerWidth) {
+  //       case window.innerWidth < 300:
+  //         setIsMobileSize(1);
+  //         break;
+  //       default:
+  //         setIsMobileSize(5);
+  //         break;
+  //     }
+  //   };
+  // }, []);

@@ -85,7 +85,7 @@ const Nav = () => {
             </a>
           </li>
         </ul>
-        <div class="hamb" onClick={hamburger}>
+        <div className="hamb" onClick={hamburger}>
           <span>
             <img src="https://therepublicoftoys.uz/img/home/hamb.svg" alt="toys" />
           </span>

@@ -10,12 +10,11 @@ const Protsess = () => {
   return (
     <div className='protsess'>
         <div className="protsess_title">
-            <span>{("protses_span")}</span>
-            <h1>{("protses_h1")}</h1>
+            <span>{t("protses_span")}</span>
+            <h1>{t("protses_h1")}</h1>
             <hr className='productHr' />
         </div>
         <div className="body_protsess">
-            
             <div className="protsess_column align_right">
                 <p>{t("protses_right1")}</p>
                 <p>{t("protses_right2")}</p>

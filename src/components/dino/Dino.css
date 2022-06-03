@@ -68,8 +68,9 @@ a {
 .dino_title > hr {
     width: 56px;
     height: 0px;
-    color: #FFA723 !important;
+    border: 1px solid #ffa723;
 }
+
 
 .dino__txt__body {
     padding-top: 130px;
@@ -109,49 +110,555 @@ a {
 
 
 @media screen and (max-width: 1200px) {
+    .dino {
+        width: 100%;
+        margin-top: 70px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 116%;
+        background-position-y: 22vw;
+    }
+
+    .dino_title > span {
+        color: #ffa723;
+        font-size: 1.4vw;
+    }
     
+    .dino_img > img {
+        width: 240px;
+        height: 300px;
+        margin-top: -20px;
+    }
+
+    .dino_title > h1 {
+        font-size: 3vw;
+        line-height: 4vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 12px;
+        line-height: 2vw;
+        margin-top: -30px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 2vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }
 
 @media screen and (max-width: 1088px) {
-  
+    .dino {
+        width: 100%;
+        margin-top: 70px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 116%;
+        background-position-y: 22vw;
+    }
+
+    .dino_title > span {
+        color: #ffa723;
+        font-size: 1.4vw;
+    }
+    
+    .dino_img > img {
+        width: 240px;
+        height: 300px;
+        margin-top: -20px;
+    }
+
+    .dino_title > h1 {
+        font-size: 3vw;
+        line-height: 4vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 12px;
+        line-height: 2vw;
+        margin-top: -30px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 1.7vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }
 
 @media screen and (max-width: 1024px) {
- 
+    .dino {
+        width: 100%;
+        margin-top: 70px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 116%;
+        background-position-y: 22vw;
+    }
+
+    .dino_title > span {
+        color: #ffa723;
+        font-size: 1.4vw;
+    }
+    
+    .dino_img > img {
+        width: 240px;
+        height: 300px;
+        margin-top: -20px;
+    }
+
+    .dino_title > h1 {
+        font-size: 3vw;
+        line-height: 4vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 12px;
+        line-height: 2vw;
+        margin-top: -30px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 2vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }
 
 @media screen and (max-width: 976px) {
-  
+    .dino {
+        width: 100%;
+        margin-top: 70px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 116%;
+        background-position-y: 22vw;
+    }
+
+    .dino_title > span {
+        color: #ffa723;
+        font-size: 1.4vw;
+    }
+    
+    .dino_img > img {
+        width: 180px;
+        height: 240px;
+        margin-top: -20px;
+    }
+
+    .dino_title > h1 {
+        font-size: 3vw;
+        line-height: 4vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 12px;
+        line-height: 2vw;
+        margin-top: -30px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 2vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }
 
 @media screen and (max-width: 852px) {
-   
+    .dino {
+        width: 100%;
+        margin-top: 70px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 116%;
+        background-position-y: 26vw;
+    }
+
+    .dino_title > span {
+        color: #ffa723;
+        font-size: 1.4vw;
+    }
+    
+    .dino_img > img {
+        width: 180px;
+        height: 240px;
+        margin-top: -20px;
+    }
+
+    .dino_title > h1 {
+        font-size: 3vw;
+        line-height: 4vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 12px;
+        line-height: 2vw;
+        margin-top: -30px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 2vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
-   
+    .dino {
+        width: 100%;
+        margin-top: 70px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 116%;
+        background-position-y: 26vw;
+    }
+
+    .dino_title > span {
+        color: #ffa723;
+        font-size: 1.4vw;
+    }
+    
+    .dino_img > img {
+        width: 180px;
+        height: 240px;
+        margin-top: -20px;
+    }
+
+    .dino_title > h1 {
+        font-size: 3vw;
+        line-height: 4vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 12px;
+        line-height: 2vw;
+        margin-top: -30px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 3vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }
 
 @media screen and (max-width: 630px) {
-   
+    .dino {
+        width: 100%;
+        margin-top: 290px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 186%;
+        background-position-y: 47vw;
+    }
+
+    .dino_title > span {
+        font-size: 3.4vw;
+    }  
+    
+    .dino_img > img {
+        width: 180px;
+        height: 240px;
+        margin-top: 23px;
+    }
+
+    .dino_title > h1 {
+        font-size: 7vw;
+        line-height: 8vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-top: -70px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 3vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }
 
 @media screen and (max-width: 501px) {
-  
+    .dino {
+        width: 100%;
+        margin-top: 170px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 186%;
+        background-position-y: 50vw;
+    }
+    
+    .dino_title > span {
+        font-size: 3.4vw;
+    }
+
+    .dino_img > img {
+        width: 180px;
+        height: 240px;
+        margin-top: 40px;
+    }
+
+    .dino_title > h1 {
+        font-size: 7vw;
+        line-height: 8vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-top: -75px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 3vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }
 
 @media screen and (max-width: 460px) {
+    .dino {
+        width: 100%;
+        margin-top: 130px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 186%;
+        background-position-y: 55vw;
+    }
     
+    .dino_img > img {
+        width: 160px;
+        height: 220px;
+        margin-top: 30px;
+    }
+
+    .dino_title > h1 {
+        font-size: 7vw;
+        line-height: 9vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-top: -80px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 4.4vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }
 
 @media screen and (max-width: 400px) {
+    .dino {
+        width: 100%;
+        margin-top: 60px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 186%;
+        background-position-y: 58vw;
+    }
+    
+    .dino_img > img {
+        width: 100px;
+        height: 180px;
+        margin-top: 40px;
+    }
 
+    .dino_title > h1 {
+        font-size: 7vw;
+        line-height: 9vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-top: -80px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 4.4vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }
 
 @media screen and (max-width: 370px) {
-   
+    .dino {
+        width: 100%;
+        margin-top: 40px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 186%;
+        background-position-y: 62vw;
+    }
+    
+    .dino_img > img {
+        width: 100px;
+        height: 180px;
+        margin-top: 30px;
+    }
+
+    .dino_title > h1 {
+        font-size: 7vw;
+        line-height: 9vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-top: -80px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 4vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }
 
 @media (min-width: 230px) and (max-width: 330px) {
-   
+    .dino {
+        width: 100%;
+        margin-top: 10px;
+        background: url("https://therepublicoftoys.uz/static/media/bg-dino.8fc24af2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 10vw;
+        background-size: 186%;
+        background-position-y: 68vw;
+    }
+    
+    .dino_img > img {
+        width: 100px;
+        height: 180px;
+        margin-top: 30px;
+    }
+
+    .dino_title > h1 {
+        font-size: 7vw;
+        line-height: 9vw;
+    } 
+
+    .dino__txt__body > p {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-top: -90px;
+    }
+
+    .dino_btn {
+        background-color: #fff;
+        color: #ffa723;
+        margin-top: 2vw;
+        font-size: 4vw;
+        margin-top: 15px;
+    }
+
+    .dino_btn > img {
+        margin-left: 10px;
+        width: 20px !important;
+    }
 }

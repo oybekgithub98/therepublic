@@ -7,11 +7,34 @@ import { useTranslation } from "react-i18next";
 const ProductBody = ({filterItems }) => {
 
   const { t } = useTranslation();
+    const [isMobileSize, setIsMobileSize] = React.useState(5);
+
+  React.useEffect(() => {
+      window.onresize = () => {
+  
+        if (window.innerWidth > 1200) {
+          setIsMobileSize(5);
+        } else if(window.innerWidth > 976) {
+          setIsMobileSize(4);
+        } else if(window.innerWidth > 767) {
+          setIsMobileSize(3);
+        } else if(window.innerWidth > 630) {
+          setIsMobileSize(2);
+        } else if(window.innerWidth > 230) {
+          setIsMobileSize(1);
+        } else {
+          setIsMobileSize(5);
+        }
+      };
+    }, []);
   
   return (
     <div className="productBody">
       <div className="productBody_wrapper">
-        <Slider slidesToShow={5} swipeToSlide={true} focusOnSelect={true}>
+        <Slider 
+        slidesToShow={isMobileSize}
+        swipeToSlide={true} 
+        focusOnSelect={true}>
           <div
             className="product_item"
             onClick={filterItems.bind(
