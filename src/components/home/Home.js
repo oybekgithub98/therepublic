@@ -73,9 +73,9 @@ const Home = ({ filterItems }) => {
       <Dino />
       <OnCounter />
       <Protsess />
-      {/*<Export />
+      <Export />
       <Showroom />
-      <Contact /> */}
+      <Contact />
     
     </>
   )

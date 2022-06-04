@@ -55,6 +55,7 @@
     justify-content:center;
     column-gap: 98px;
 }
+
 .counter_card{
     cursor: pointer;
     background: #fff;
@@ -169,27 +170,81 @@
 
 
 @media screen and (max-width: 1200px) {
-    
+    .on_counter_card_wrapper{
+        display: flex;
+        padding-top: 30px;
+        justify-content:center;
+        column-gap: 32px;
+    }
+
+    .counter_card, .counter_card1  > p {
+        font-size: 1.4vw;
+    }
 }
 
 @media screen and (max-width: 1088px) {
-  
+    .on_counter_card_wrapper{
+        display: flex;
+        padding-top: 30px;
+        justify-content:center;
+        column-gap: 32px;
+    }
+
+    .counter_card, .counter_card1  > p {
+        font-size: 1.4vw;
+    }
 }
 
 @media screen and (max-width: 1024px) {
- 
+    .on_counter_card_wrapper{
+        display: flex;
+        padding-top: 30px;
+        justify-content:center;
+        column-gap: 32px;
+    }
+
+    .counter_card, .counter_card1  > p {
+        font-size: 1.3vw;
+    }
 }
 
 @media screen and (max-width: 976px) {
-  
+    .on_counter_card_wrapper{
+        display: flex;
+        padding-top: 30px;
+        justify-content:center;
+        column-gap: 32px;
+    }
+
+    .counter_card, .counter_card1  > p {
+        font-size: 1.3vw;
+    }
 }
 
 @media screen and (max-width: 852px) {
-   
+    .on_counter_card_wrapper{
+        display: flex;
+        padding-top: 30px;
+        justify-content:center;
+        column-gap: 32px;
+    }
+
+    .counter_card, .counter_card1  > p {
+        font-size: 1.2vw;
+    }
 }
 
 @media screen and (max-width: 767px) {
-   
+    .on_counter_card_wrapper{
+        display: flex;
+        padding-top: 30px;
+        justify-content:center;
+        column-gap: 32px;
+    }
+
+    .counter_card, .counter_card1  > p {
+        font-size: 1vw;
+    }
 }
 
 @media screen and (max-width: 630px) {

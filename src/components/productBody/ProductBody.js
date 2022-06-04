@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "./ProductBody.css";
@@ -7,11 +7,10 @@ import { useTranslation } from "react-i18next";
 const ProductBody = ({filterItems }) => {
 
   const { t } = useTranslation();
-    const [isMobileSize, setIsMobileSize] = React.useState(5);
+    const [isMobileSize, setIsMobileSize] = useState(5);
 
-  React.useEffect(() => {
+  useEffect(() => {
       window.onresize = () => {
-  
         if (window.innerWidth > 1200) {
           setIsMobileSize(5);
         } else if(window.innerWidth > 976) {

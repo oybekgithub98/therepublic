@@ -55,49 +55,229 @@
 
 
 @media screen and (max-width: 1200px) {
-    
+    .export_title > hr {
+        margin-top: 12px;
+    }  
 }
 
 @media screen and (max-width: 1088px) {
-  
+    .export_title > hr {
+        margin-top: 10px;
+    }  
 }
 
 @media screen and (max-width: 1024px) {
- 
+    .export_title > hr {
+        margin-top: 8px;
+    }  
 }
 
 @media screen and (max-width: 976px) {
-  
+    .export_title > hr {
+        margin-top: 10px;
+    }  
 }
 
 @media screen and (max-width: 852px) {
-   
+    .export {
+        margin-top: -50px;
+    }
+
+    .export_title > span {
+        font-size: 1.4vw;
+    }
+    
+    .export_title > h1 {
+        font-size: 3vw;
+    }
+
+    .export_title > hr {
+        margin-top: 10px;
+    }  
 }
 
 @media screen and (max-width: 767px) {
-   
+    .export {
+        margin-top: -50px;
+    }
+
+    .export_title > span {
+        font-size: 1.4vw;
+    }
+    
+    .export_title > h1 {
+        font-size: 3vw;
+    }
+
+    .export_title > hr {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 630px) {
-   
+    .export {
+        margin-top: -50px;
+    }
+
+    .export_title > span {
+        font-size: 3.4vw;
+    }
+    
+    .export_title > h1 {
+        font-size: 9vw;
+        line-height: 10vw;
+    }
+    
+    .export_title > hr {
+        margin-top: 10px;
+    }
+
+    .txt__export > p {
+        display: none;
+    }
+
+    .export_wrapper > .container > img {
+        width: 100%;
+        margin-top: 6vw;
+    }
 }
 
 @media screen and (max-width: 501px) {
-  
+    .export {
+        margin-top: -50px;
+    }
+
+    .export_title > span {
+        font-size: 3.4vw;
+    }
+    
+    .export_title > h1 {
+        font-size: 9vw;
+        line-height: 10vw;
+    }
+    
+    .export_title > hr {
+        margin-top: 10px;
+    }
+
+    .txt__export > p {
+        display: none;
+    }
+
+    .export_wrapper > .container > img {
+        width: 100%;
+        margin-top: 6vw;
+    }
 }
 
 @media screen and (max-width: 460px) {
+    .export {
+        margin-top: -50px;
+    }
+
+    .export_title > span {
+        font-size: 3.4vw;
+    }
     
+    .export_title > h1 {
+        font-size: 9vw;
+        line-height: 10vw;
+    }
+    
+    .export_title > hr {
+        margin-top: 10px;
+    }
+
+    .txt__export > p {
+        display: none;
+    }
+
+    .export_wrapper > .container > img {
+        width: 100%;
+        margin-top: 6vw;
+    }
 }
 
 @media screen and (max-width: 400px) {
+    .export {
+        margin-top: -50px;
+    }
 
+    .export_title > span {
+        font-size: 3.4vw;
+    }
+    
+    .export_title > h1 {
+        font-size: 9vw;
+        line-height: 10vw;
+    }
+    
+    .export_title > hr {
+        margin-top: 10px;
+    }
+
+    .txt__export > p {
+        display: none;
+    }
+
+    .export_wrapper > .container > img {
+        width: 100%;
+        margin-top: 6vw;
+    }
 }
 
 @media screen and (max-width: 370px) {
-   
+    .export {
+        margin-top: -50px;
+    }
+
+    .export_title > span {
+        font-size: 3.4vw;
+    }
+    
+    .export_title > h1 {
+        font-size: 9vw;
+        line-height: 10vw;
+    }
+    
+    .export_title > hr {
+        margin-top: 10px;
+    }
+
+    .txt__export > p {
+        display: none;
+    }
+
+    .export_wrapper > .container > img {
+        width: 100%;
+        margin-top: 6vw;
+    }
 }
 
 @media (min-width: 230px) and (max-width: 330px) {
-   
+    .export {
+        margin-top: -50px;
+    }
+
+    .export_title > span {
+        font-size: 3.4vw;
+    }
+    
+    .export_title > h1 {
+        font-size: 9vw;
+        line-height: 10vw;
+    }
+    
+    .export_title > hr {
+        margin-top: 10px;
+    }
+
+    .txt__export > p {
+        display: none;
+    }
+
+    .export_wrapper > .container > img {
+        width: 100%;
+        margin-top: 6vw;
+    }
 }

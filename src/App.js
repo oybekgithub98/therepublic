@@ -50,11 +50,11 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<Home filterItems={filterItems}/>} />
-        {/* <Route path='/product' element={<Product products={products} items={menuItems} activeCategory={activeCategory} categories={categories} filterItems={filterItems} />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path='/product' element={<Product products={products} items={menuItems} activeCategory={activeCategory} categories={categories} filterItems={filterItems} />} />
+        {/* <Route path="/about" element={<AboutPage />} />
         <Route path="/product/:id" element={<OfferPage products={products} />}/>*/}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
       {/* <ScrollArrow />  */}
     </div>
   );

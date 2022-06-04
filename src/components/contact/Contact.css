@@ -105,3 +105,87 @@ form {
     color: #FFA723;
     text-align: center;
 }
+
+@media screen and (max-width: 630px) {
+    .contact > form {
+        width: 80%;
+    }
+
+    .contact > form > h1 {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .contact > form > .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact > form > .row > input {
+        width: 100%;
+        padding: 3vw;
+        border-radius: 1.6vw;
+        margin: 3px 0;
+    }
+
+    .contact > form > textarea {
+        padding: 3vw;
+        border-radius: 1.6vw;
+    }
+
+    .contact > form > button {
+        padding: 3vw;
+        border-radius: 1.6vw;
+        font-size: 3.3vw;
+    }
+}
+
+@media screen and (max-width: 501px) {
+  
+}
+
+@media screen and (max-width: 460px) {
+    
+}
+
+@media screen and (max-width: 400px) {
+
+}
+
+@media screen and (max-width: 370px) {
+   
+}
+
+@media (min-width: 230px) and (max-width: 330px) {
+    .contact > form {
+        width: 80%;
+    }
+
+    .contact > form > h1 {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .contact > form > .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact > form > .row > input {
+        width: 100%;
+        padding: 3vw;
+        border-radius: 1.6vw;
+        margin: 3px 0;
+    }
+
+    .contact > form > textarea {
+        padding: 3vw;
+        border-radius: 1.6vw;
+    }
+
+    .contact > form > button {
+        padding: 3vw;
+        border-radius: 1.6vw;
+        font-size: 3.3vw;
+    }
+}

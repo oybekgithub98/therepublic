@@ -160,3 +160,91 @@ li {
 .hover__offer > img {
     width: 3vw
 }
+
+
+
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 976px) {
+
+}
+
+@media screen and (max-width: 852px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 630px) {
+
+}
+
+@media screen and (max-width: 501px) {
+
+}
+
+@media screen and (max-width: 460px) {
+
+}
+
+@media screen and (max-width: 400px) {
+
+}
+
+@media screen and (max-width: 370px) {
+
+}
+
+@media (min-width: 230px) and (max-width: 330px) {
+    .tabs_menu {
+        display: none;
+    }
+
+    .tabs_panel {
+        width: 100%;
+    }
+
+    .tabs_panel > .offers {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1vw;
+        gap: 6vw;
+    }
+
+    .offers a {
+        /* margin: 5px; */
+    }
+
+    .offer {
+        border-radius: 4vw;
+    }
+
+    .offer > img {
+        width: 100%;
+        height: 41vw;
+        object-fit: cover;
+    }
+
+    .offer > p {
+        font-size: 3.7vw;
+    }
+
+    .offer > span {
+        font-size: 2.9vw;
+    }
+
+    .dddd {
+        width: 100%;
+        height: 80px;
+        background-color: red;
+        display: inline-block;
+    }
+}

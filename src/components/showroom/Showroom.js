@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import { MdClose } from 'react-icons/md';
 import { useTranslation } from "react-i18next";
@@ -10,12 +10,39 @@ const Showroom = () => {
     const { t } = useTranslation();
     const [isModelOpen, setIsModelOpen] = useState(false);
     const [activeCard, setActiveCard] = useState(null);
+    const [partnerSlide, setPartnerSlide] = useState(4);
 
     const toggleModal = () => setIsModelOpen(!isModelOpen);
     const activateModal = (currentButton) => {
         toggleModal(!isModelOpen);
         setActiveCard(currentButton)
     }
+
+    useEffect(() => {
+        const body = document.body
+        if (isModelOpen) {
+            body.style.overflow = "hidden"
+        } else {
+            body.style.overflow = "visible"
+        }
+    }, [isModelOpen]);
+
+
+    useEffect(() => {
+        window.onresize = () => {
+            if (window.innerWidth > 1200) {
+              setPartnerSlide(4);
+            } else if(window.innerWidth > 767) {
+              setPartnerSlide(3);
+            } else if(window.innerWidth > 630) {
+              setPartnerSlide(2);
+            } else if(window.innerWidth > 230) {
+              setPartnerSlide(1);
+            } else {
+              setPartnerSlide(4);
+            }
+        };
+      }, []);
 
     return (
         <div className='showroom' id="showroom">
@@ -59,7 +86,7 @@ const Showroom = () => {
                                 <div className="partner_body">
                                     <div className="partner_body_wrapper">
                                         <Slider
-                                            slidesToShow={4}
+                                            slidesToShow={partnerSlide}
                                             swipeToSlide={true}
                                             focusOnSelect={true}
                                         >

@@ -26,9 +26,12 @@ const Product = ({products, filterItems, categories, activeCategory }) => {
   return <div className="react-tabs">
   {products?.length ? 
     <div className="react-tabs_wrapper">
+      {/* <div className='dddd'>
+        kategoriya
+      </div> */}
       <div className="tabs_menu">
         <h2>{t("tabs_menu_h2")}</h2>
-        <ul className='tabs_collection' > {/* role="tablits" */}
+        <ul className='tabs_collection'>
           {
             categories.map((category, index) =>
             (<li key={index} onClick={() => filterItems(category)} className="react-tabs__tab">

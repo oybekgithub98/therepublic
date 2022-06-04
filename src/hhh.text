@@ -1,23 +1,444 @@
-  // const [isMobileSize, setIsMobileSize] = React.useState(5);
+import { useEffect, useState } from 'react';
+import Slider from "react-slick";
+import Contact from '../contact/Contact';
+import Dino from '../dino/Dino';
+import DownloadCat from '../downloadCat/DownloadCat';
+import Export from '../export/Export';
+import OnCounter from '../onCounter/OnCounter';
+import Product from '../product/Product';
+import Protsess from '../protsess/Protsess';
+import Showroom from '../showroom/Showroom';
+import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next"
+
+import "./Home.css";
+
+const Home = ({ filterItems }) => {
+  const { t } = useTranslation();
+  const [nav2, setNav2] = useState();
+
+  useEffect(() => {
+    setNav2();
+  }, [nav2]);
+
+
+  return (
+    <>
+      <div className="swiper" style={{ padding: "0 30px", }}>
+        <Slider className="mainSlider" asNavFor={nav2}>
+          <div className="swiper_item">
+            <div className="swiper_text">
+              <h1>{t('homeSlider1')}</h1>
+              <Link to="/product" className="swiper_btn"><span>{t("Batafsil")}</span>
+                <img src="https://therepublicoftoys.uz/static/media/btnarrow.a886bf66.svg" alt="" />
+              </Link>
+            </div>
+            <div className="swiper_img">
+              <img
+                src="https://therepublicoftoys.uz/img/home/kamaz2.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="swiper_item">
+            <div className="swiper_text">
+              <h1>{t('homeSlider2')}</h1>
+              <Link to="/product" className="swiper_btn"><span>{t("Batafsil")}</span>
+                <img src="https://therepublicoftoys.uz/static/media/btnarrow.a886bf66.svg" alt="" />
+              </Link>
+            </div>
+            <div className="swiper_img">
+              <img
+                src="https://therepublicoftoys.uz/img/home/kamaz3.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="swiper_item">
+            <div className="swiper_text">
+              <h1>{t('homeSlider3')}</h1>
+              <Link to="/product" className="swiper_btn"><span>{t("Batafsil")}</span>
+                <img src="https://therepublicoftoys.uz/static/media/btnarrow.a886bf66.svg" alt="" />
+              </Link>
+            </div>
+            <div className="swiper_img">
+              <img src="https://therepublicoftoys.uz/img/home/kamaz.png" alt="" />
+            </div>
+          </div>
+        </Slider>
+      </div>
+
+      <DownloadCat />
+      <Product filterItems={filterItems} />
+      <Dino />
+      <OnCounter />
+      <Protsess />
+      <Export />
+      <Showroom />
+      {/* <Contact /> */}
+    
+    </>
+  )
+}
+
+export default Home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.showroom {
+    width: 100%;
+}
+
+.showroom_wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative; 
+}
+
+.showroom_title {
+    text-align: center;
+    background-image: url("https://therepublicoftoys.uz/static/media/title-bg.0409017c.svg");
+    background-size: 18vw;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.showroom_title > span {
+    color: #ffa723;
+    font-size: 1.4vw;
+}
+
+.showroom_title > h1 {
+    font-size: 3vw;
+    color: #19b1f4;
+}
+
+.showroom_title > hr {
+    width: 5vw;
+    margin: 1vw auto;
+    border: 1px solid #ffa723;
+    background-color: #ffa723;
+}
+
+.showroom_container {
+    width: 76vw;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.dubl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dubl > .item {
+    display: grid;
+    width: 35vw;
+    grid-gap: 3vw;
+    gap: 3vw;
+    position: relative;
+    align-items: center;
+}
+
+.dubl > .item::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(25,178,244,.17254901960784313);
+    width: 20vw;
+    height: 10vw;
+    border-radius: 2vw;
+    left: -2vw;
+    top: -2vw;
+    z-index: -1;
+}
+
+.item > img {
+    width: 100%;
+}
+
+.item > button {
+    margin: 0 auto;
+    background-color: #19b1f4;
+    padding: 1vw 3vw;
+    border-radius: 0.6vw;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+    z-index: 9999;
+}
+
+.item > button:hover {
+    transform: scale(0.9)
+}
+
+.item > button > img{
+    width: 1.8vw
+}
+
+.dublItemClick {
+    width: 80%;
+    height: 369px;
+    position: fixed;
+    z-index: 20;
+    left: 130px;
+    top: 100px;
+    opacity: 0;
+}
+
+.dublItemClick > iframe {
+    width: 100%;
+    height: 369px;
+}
+
+.dublItemClick.active {
+    opacity: 1;
+    z-index: 99999;
+}
+
+.dublItemClickBtn {
+    padding: 13px 27px;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: -55px;
+    top: -30px;
+    color: white;
+    background-color: #FFA723;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.dublItemClickBtn:hover {
+    transform: scale(0.9);
+}
+
+.closeToggleModal {
+    font-size: 16px;
+}
+
+
+.partner {
+    text-align: center;
+    padding-top: 140px;
+}
+
+.partner_title {
+    text-align: center;
+    background-image: url("https://therepublicoftoys.uz/static/media/title-bg.0409017c.svg");
+    background-size: 18vw;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.partner_title > span {
+    color: #ffa723;
+    font-size: 1.4vw;
+}
+
+.partner_title > h1 {
+    font-size: 3vw;
+    color: #19b1f4;
+}
+
+.partner_title > hr {
+    width: 5vw;
+    margin: 1vw auto;
+    border: 1px solid #ffa723;
+    background-color: #ffa723;
+}
+
+.partner_body {
+    width: 100%;
+    margin: 100px 0;
+}
+
+.partner_body_wrapper {
+    width: 100%;
+}
+
+.partner_item {
+    width: 260px;
+    height: 240px;
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.partner_item > img {
+    width: 100%;
+}
+
+
+.partner_body_wrapper > .slick-slider > .slick-prev {
+    left: -38px;
+    background-image: url("https://therepublicoftoys.uz/static/media/Vector.02971ca7.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transform: rotate(180deg);
+    width: 50px !important;
+    background-color: transparent;
+}
+
+.partner_body_wrapper > .slick-slider > .slick-next {
+    right: -38px;
+    background-image: url("https://therepublicoftoys.uz/static/media/Vector.02971ca7.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transform: rotate(180deg);
+    width: 50px !important;
+    background-color: transparent;
+    transform: rotate(0);
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 1088px) {
   
-  // React.useEffect(() => {
-  //   window.onresize = () => {
+}
 
-  //     if (window.innerWidth > 300) {
-  //       setIsMobileSize(1);
-  //     } else if(window.innerWidth > 700) {
-  //       setIsMobileSize(2);
-  //     } else {
-  //       setIsMobileSize(5);
-  //     }
+@media screen and (max-width: 1024px) {
+ 
+}
 
-  //     switch (window.innerWidth) {
-  //       case window.innerWidth < 300:
-  //         setIsMobileSize(1);
-  //         break;
-  //       default:
-  //         setIsMobileSize(5);
-  //         break;
-  //     }
-  //   };
-  // }, []);
+@media screen and (max-width: 976px) {
+  
+}
+
+@media screen and (max-width: 852px) {
+   
+}
+
+@media screen and (max-width: 767px) {
+   
+}
+
+@media screen and (max-width: 630px) {
+   
+}
+
+@media screen and (max-width: 501px) {
+  
+}
+
+@media screen and (max-width: 460px) {
+    
+}
+
+@media screen and (max-width: 400px) {
+
+}
+
+@media screen and (max-width: 370px) {
+   
+}
+
+@media (min-width: 230px) and (max-width: 330px) {
+    .showroom {
+        width: 100%;
+    }
+
+    .showroom_title > span {
+        font-size: 3.4vw;
+    }
+
+    .showroom_title > h1 {
+        font-size: 9vw;
+    }
+
+    .showroom_title > hr {
+        width: 17vw;
+        border: 3px solid #ffa723;
+    }
+
+    .dubl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dubl > .item {
+        width: 100%;
+    }
+
+    .item > button {
+        width: 100%;
+        padding: 4vw;
+        border-radius: 3vw;
+        justify-content: center;
+        grid-gap: 9vw;
+        gap: 9vw;
+        margin-bottom: 40px;
+        font-size: 4vw;
+    }
+
+    .item > button > img {
+        width: 12.8vw;
+    }
+
+    .dublItemClick{
+        width: 100%;
+        height: 369px;
+        position: absolute;
+        z-index: 20;
+        left: 0;
+        top: 240px;
+        opacity: 0;
+    }
+
+    .dublItemClickBtn {
+        padding: 7px 15px;
+        border-radius: 9px;
+        border: none;
+        outline: none;
+        position: absolute;
+        right: -25px;
+        top: -20px;
+        color: white;
+        background-color: #FFA723;
+        transition: all 1s;
+        cursor: pointer;
+    }
+
+    .partner_title > span {
+        font-size: 3.4vw; 
+    }
+
+    .partner_title > h1 {
+        font-size: 9vw;
+    }
+
+    .partner_title > hr {
+        width: 17vw;
+        border: 3px solid #ffa723;
+    }
+}

@@ -39,52 +39,11 @@
     padding-top: 80px;
 }
 
-.dublItemClick {
-    width: 100%;
-    height: 369px;
-    position: absolute;
-    z-index: 20;
-    background-color: red;
-    left: 0;
-    top: 260px;
-    opacity: 0;
-}
-
-.dublItemClick > iframe {
-    width: 100%;
-    height: 369px;
-}
-
-.dublItemClick.active {
-    opacity: 1;
-    z-index: 99999;
-}
-
-.dublItemClickBtn {
-    padding: 13px 27px;
-    border-radius: 9px;
-    border: none;
-    outline: none;
-    position: absolute;
-    right: -55px;
-    top: -30px;
-    color: white;
-    background-color: #FFA723;
-    transition: all 1s;
-    cursor: pointer;
-}
-
-.dublItemClickBtn:hover {
-    transform: scale(0.9);
-}
-
-.closeToggleModal {
-    font-size: 16px;
-}
-
 .dubl {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    width: 100%;
 }
 
 .dubl > .item {
@@ -112,6 +71,53 @@
     width: 100%;
 }
 
+.dublItemClick {
+    width: 100%;
+    height: 369px;
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    top: 260px;
+    opacity: -1;
+}
+
+.dublItemClick > iframe {
+    width: 100%;
+    height: 369px;
+}
+
+.dublItemClick.active {
+    width: 80%;
+    height: 369px;
+    position: fixed;
+    z-index: 99;
+    left: 130px;
+    top: 120px;
+    opacity: 1;
+}
+
+.dublItemClickBtn {
+    padding: 13px 27px;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: -55px;
+    top: -30px;
+    color: white;
+    background-color: #FFA723;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.dublItemClickBtn:hover {
+    transform: scale(0.9);
+}
+
+.closeToggleModal {
+    font-size: 16px;
+}
+
 .item > button {
     margin: 0 auto;
     background-color: #19b1f4;
@@ -126,7 +132,7 @@
     outline: none;
     border: none;
     transition: all 0.3s;
-    z-index: 9999;
+    z-index: 90;
 }
 
 .item > button:hover {
@@ -140,6 +146,7 @@
 .partner {
     text-align: center;
     padding-top: 140px;
+
 }
 
 .partner_title {
@@ -153,6 +160,7 @@
 .partner_title > span {
     color: #ffa723;
     font-size: 1.4vw;
+    cursor: pointer;
 }
 
 .partner_title > h1 {
@@ -212,4 +220,390 @@
     width: 50px !important;
     background-color: transparent;
     transform: rotate(0);
+}
+
+@media screen and (max-width: 1200px) {
+    .item > button {
+        color: #fff;
+        white-space: nowrap;
+        padding: 1vw 2vw;
+        border: none;
+        border-radius: 1vw;
+        transition: .3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1vw;
+        gap: 1vw;
+        font-size: 1.3vw;
+        font-family: "Light";
+    }
+
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 105px;
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1088px) {
+    .item > button {
+        color: #fff;
+        white-space: nowrap;
+        padding: 1vw 2vw;
+        border: none;
+        border-radius: 1vw;
+        transition: .3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1vw;
+        gap: 1vw;
+        font-size: 1.3vw;
+        font-family: "Light";
+    }
+
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 105px;
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .item > button {
+        color: #fff;
+        white-space: nowrap;
+        padding: 1vw 2vw;
+        border: none;
+        border-radius: 1vw;
+        transition: .3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1vw;
+        gap: 1vw;
+        font-size: 1.3vw;
+        font-family: "Light";
+    }
+
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 100px;
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 976px) {
+    .item > button {
+        color: #fff;
+        white-space: nowrap;
+        padding: 1vw 2vw;
+        border: none;
+        border-radius: 1vw;
+        transition: .3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1vw;
+        gap: 1vw;
+        font-size: 1.3vw;
+        font-family: "Light";
+    }
+
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 90px;
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 852px) {
+    .item > button {
+        color: #fff;
+        white-space: nowrap;
+        padding: 1vw 2vw;
+        border: none;
+        border-radius: 1vw;
+        transition: .3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1vw;
+        gap: 1vw;
+        font-size: 1.3vw;
+        font-family: "Light";
+    }
+
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 85px;
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .item > button {
+        color: #fff;
+        white-space: nowrap;
+        padding: 1vw 2vw;
+        border: none;
+        border-radius: 1vw;
+        transition: .3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1vw;
+        gap: 1vw;
+        font-size: 1.3vw;
+        font-family: "Light";
+    }
+
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 70px;
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .showroom {
+        width: 100%;
+    }
+
+    .showroom_title > span {
+        font-size: 3.4vw;
+    }
+
+    .showroom_title > h1 {
+        font-size: 9vw;
+    }
+
+    .showroom_title > hr {
+        width: 17vw;
+        border: 3px solid #ffa723;
+    }
+
+    .dubl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dubl > .item {
+        width: 100%;
+    }
+
+    .item > button {
+        width: 100%;
+        padding: 4vw;
+        border-radius: 3vw;
+        justify-content: center;
+        grid-gap: 9vw;
+        gap: 9vw;
+        margin-bottom: 40px;
+        font-size: 4vw;
+    }
+
+    .item > button > img {
+        width: 12.8vw;
+    }
+
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 59px;
+        top: 50px;
+        opacity: 1;
+    }
+
+    .dublItemClickBtn {
+        padding: 7px 15px;
+        border-radius: 9px;
+        border: none;
+        outline: none;
+        position: absolute;
+        right: -25px;
+        top: -20px;
+        color: white;
+        background-color: #FFA723;
+        transition: all 1s;
+        cursor: pointer;
+    }
+
+    .partner_title {
+        margin-top: -137px;
+    }
+
+    .partner_title > span {
+        font-size: 3.4vw; 
+    }
+
+    .partner_title > h1 {
+        font-size: 9vw;
+    }
+
+    .partner_title > hr {
+        width: 17vw;
+        border: 3px solid #ffa723;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 49px;
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 44px;
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 39px;
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 33px;
+        top: 50px;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 230px) and (max-width: 330px) {
+    .showroom {
+        width: 100%;
+    }
+
+    .showroom_title > span {
+        font-size: 3.4vw;
+    }
+
+    .showroom_title > h1 {
+        font-size: 9vw;
+    }
+
+    .showroom_title > hr {
+        width: 17vw;
+        border: 3px solid #ffa723;
+    }
+
+    .dubl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dubl > .item {
+        width: 100%;
+    }
+
+    .item > button {
+        width: 100%;
+        padding: 4vw;
+        border-radius: 3vw;
+        justify-content: center;
+        grid-gap: 9vw;
+        gap: 9vw;
+        margin-bottom: 40px;
+        font-size: 4vw;
+    }
+
+    .item > button > img {
+        width: 12.8vw;
+    }
+
+    .dublItemClick.active {
+        width: 80%;
+        height: 369px;
+        position: fixed;
+        z-index: 99;
+        left: 30px;
+        top: 50px;
+        opacity: 1;
+    }
+
+    .dublItemClickBtn {
+        padding: 7px 15px;
+        border-radius: 9px;
+        border: none;
+        outline: none;
+        position: absolute;
+        right: -25px;
+        top: -20px;
+        color: white;
+        background-color: #FFA723;
+        transition: all 1s;
+        cursor: pointer;
+    }
+
+    .partner_title {
+        margin-top: -137px;
+    }
+
+    .partner_title > span {
+        font-size: 3.4vw; 
+    }
+
+    .partner_title > h1 {
+        font-size: 9vw;
+    }
+
+    .partner_title > hr {
+        width: 17vw;
+        border: 3px solid #ffa723;
+    }
 }
