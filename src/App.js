@@ -51,8 +51,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home filterItems={filterItems}/>} />
         <Route path='/product' element={<Product products={products} items={menuItems} activeCategory={activeCategory} categories={categories} filterItems={filterItems} />} />
-        {/* <Route path="/about" element={<AboutPage />} />
-        <Route path="/product/:id" element={<OfferPage products={products} />}/>*/}
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/product/:id" element={<OfferPage products={products} />}/>
       </Routes>
       <Footer />
       {/* <ScrollArrow />  */}

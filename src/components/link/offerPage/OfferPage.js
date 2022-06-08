@@ -63,6 +63,26 @@ const OfferPage = ({ products }) => {
     console.log(window)
   }, [productId]);
 
+
+  var settings = {
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 630,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ],
+  };
+
   // console.log(products)
  
   return <>
@@ -198,7 +218,7 @@ const OfferPage = ({ products }) => {
     }
     <div className='offerPageSlider'>
       <div className="offerPageSlider_wrapper">
-        <Slider slidesToShow={5} swipeToSlide={true} focusOnSelect={true}>
+        <Slider slidesToShow={5} swipeToSlide={true} focusOnSelect={true} {...settings}>
           {products?.map(({ img1, title_uz, case_uz, id }) => (
             <Link to={`/product/${id}`} key={id}>
               <div className='offer'>

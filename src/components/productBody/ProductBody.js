@@ -1,52 +1,50 @@
-import React,{useEffect, useState} from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "./ProductBody.css";
 import { useTranslation } from "react-i18next";
 
-const ProductBody = ({filterItems }) => {
-
+const ProductBody = ({ filterItems }) => {
   const { t } = useTranslation();
-    const [isMobileSize, setIsMobileSize] = useState(5);
 
-  useEffect(() => {
-      window.onresize = () => {
-        if (window.innerWidth > 1200) {
-          setIsMobileSize(5);
-        } else if(window.innerWidth > 976) {
-          setIsMobileSize(4);
-        } else if(window.innerWidth > 767) {
-          setIsMobileSize(3);
-        } else if(window.innerWidth > 630) {
-          setIsMobileSize(2);
-        } else if(window.innerWidth > 230) {
-          setIsMobileSize(1);
-        } else {
-          setIsMobileSize(5);
+  var settings = {
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 630,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
-      };
-    }, []);
-  
+      },
+    ],
+  };
+   
   return (
     <div className="productBody">
       <div className="productBody_wrapper">
-        <Slider 
-        slidesToShow={isMobileSize}
-        swipeToSlide={true} 
-        focusOnSelect={true}>
+        <Slider
+          slidesToShow={5}
+          swipeToSlide={true}
+          focusOnSelect={true}
+          {...settings}
+        >
           <div
             className="product_item"
-            onClick={filterItems.bind(
-              null,
-              "уморазвития"
-            )}
+            onClick={filterItems.bind(null, "уморазвития")}
           >
             <Link to="/product">
               <img
                 src="https://therepublicoftoys.uz/img/home/ayiqcha.png"
                 alt=""
               />
-            </Link>
+            </Link>       
             <h5>{t("Aqliy_rivojlanish_uchun_oyinchoqlar")}</h5>
           </div>
           <div

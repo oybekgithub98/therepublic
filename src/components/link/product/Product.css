@@ -135,6 +135,11 @@ li {
     height: 100vh;
 }
 
+.tabs_sidebar > h1 {
+    font-size: 2.4vw;
+    margin-bottom: 20px;
+}
+
 
 @-webkit-keyframes hovercard {
     from {
@@ -161,55 +166,105 @@ li {
     width: 3vw
 }
 
+.tabs_sidebar > .sidebar {
+    display: none;
+}
 
-
+.tabs_menuClose {
+    display: none;
+}
 
 @media screen and (max-width: 1200px) {
-}
+    .tabs_sidebar > h1 {
+        font-size: 2.4vw;
+        margin-bottom: 20px;
+    }
 
-@media screen and (max-width: 1024px) {
-
-}
-
-@media screen and (max-width: 976px) {
-
-}
-
-@media screen and (max-width: 852px) {
-
+    .tabs_menu > h2 {
+        font-size: 1.7vw;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    .tabs_sidebar > h1 {
+        font-size: 2.4vw;
+        margin-bottom: 20px;
+    }
 
+    .tabs_menu > h2 {
+        font-size: 1.7vw;
+    }
 }
 
 @media screen and (max-width: 630px) {
-
-}
-
-@media screen and (max-width: 501px) {
-
-}
-
-@media screen and (max-width: 460px) {
-
-}
-
-@media screen and (max-width: 400px) {
-
-}
-
-@media screen and (max-width: 370px) {
-
-}
-
-@media (min-width: 230px) and (max-width: 330px) {
+    .react-tabs_wrapper {
+        position: relative;
+    }
     .tabs_menu {
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        z-index: 1;   
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        box-shadow: 0px 0px 1px 1px #ddd;
+        transform: translate(-111%, 0);
+        transition: all 0.4s;
+    }
+
+    .tabs_menu.active {
+        top: 0px;
+        opacity: 1;
+        z-index: 99;
+        transform: translate(0%, 0);
+    }
+
+    .tabs_menuClose {
+        display: block;
+        width: 11vw;
+        height: 11vw;
+        background: #ffa723;
+        position: absolute;
+        right: -16px;
+        top: 0;
+        border-radius: 50%;
+        color: #fff;
+        transform: rotate(180deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tabs_menu > h2 {
         display: none;
     }
 
+    .tabs_collection > li > span {
+        width: 80%;
+        color: #404040;
+        background-color: transparent;
+        border-bottom: 0.5px solid #efefef;
+        border-radius: 0;
+        font-size: 3.6vw;
+        padding: 1vw 0;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+      
+
     .tabs_panel {
         width: 100%;
+    }
+
+    .tabs_panel h1 {
+        font-size: 5.4vw;
     }
 
     .tabs_panel > .offers {
@@ -217,10 +272,6 @@ li {
         grid-template-columns: repeat(2,1fr);
         grid-gap: 1vw;
         gap: 6vw;
-    }
-
-    .offers a {
-        /* margin: 5px; */
     }
 
     .offer {
@@ -241,10 +292,252 @@ li {
         font-size: 2.9vw;
     }
 
-    .dddd {
+    .tabs_sidebar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -79px;
+        padding-bottom: 40px;
+    }
+
+    .tabs_sidebar > .sidebar {
+        margin-left: -85px;
+        background: #edf9ff;
+        border-radius: 10vw;
+        color: #19b1f4;
+        padding: 4vw 8vw;
+        position: relative;
+        font-size: 2.9vw;
+    }
+
+    .tabs_sidebar > .sidebar::after {
+        content: url(https://therepublicoftoys.uz/static/media/modal.865829e1.svg);
+        position: absolute;
+        width: 10vw;
+        right: -6vw;
+        top: 2vw;
+        height: 10vw;
+    }
+
+    .tabs_sidebar > .sidebar {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 501px) {
+    .tabs_sidebar > .sidebar {
+        margin-left: -67px;
+        background: #edf9ff;
+        border-radius: 10vw;
+        color: #19b1f4;
+        padding: 4vw 8vw;
+        position: relative;
+        font-size: 2.9vw;
+    }
+
+    .tabs_sidebar > .sidebar::after {
+        content: url(https://therepublicoftoys.uz/static/media/modal.865829e1.svg);
+        position: absolute;
+        width: 10vw;
+        right: -6vw;
+        top: 1vw;
+        height: 10vw;
+    }
+
+    .tabs_menuClose {
+        width: 11vw;
+        height: 11vw;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .tabs_sidebar > .sidebar {
+        margin-left: -67px;
+        background: #edf9ff;
+        border-radius: 10vw;
+        color: #19b1f4;
+        padding: 4vw 8vw;
+        position: relative;
+        font-size: 2.9vw;
+    }
+
+    .tabs_sidebar > .sidebar::after {
+        content: url(https://therepublicoftoys.uz/static/media/modal.865829e1.svg);
+        position: absolute;
+        width: 10vw;
+        right: -6vw;
+        top: 1vw;
+        height: 10vw;
+    }
+
+    .tabs_menuClose {
+        width: 11vw;
+        height: 11vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tabs_sidebar > .sidebar {
+        margin-left: -60px;
+        background: #edf9ff;
+        border-radius: 10vw;
+        color: #19b1f4;
+        padding: 4vw 8vw;
+        position: relative;
+        font-size: 2.9vw;
+    }
+
+    .tabs_sidebar > .sidebar::after {
+        content: url(https://therepublicoftoys.uz/static/media/modal.865829e1.svg);
+        position: absolute;
+        width: 10vw;
+        right: -6vw;
+        top: 1vw;
+        height: 10vw;
+    }
+
+    .tabs_menuClose {
+        width: 12vw;
+        height: 12vw;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .tabs_sidebar > .sidebar {
+        margin-left: -50px;
+        background: #edf9ff;
+        border-radius: 10vw;
+        color: #19b1f4;
+        padding: 4vw 8vw;
+        position: relative;
+        font-size: 2.9vw;
+    }
+
+    .tabs_menuClose {
+        width: 13vw;
+        height: 13vw;
+    }
+}
+
+@media (min-width: 230px) and (max-width: 330px) {
+
+    .react-tabs_wrapper {
+        position: relative;
+    }
+    .tabs_menu {
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        z-index: 1;   
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        box-shadow: 0px 0px 1px 1px #ddd;
+        transform: translate(-111%, 0);
+        transition: all 0.4s;
+    }
+
+    .tabs_menu.active {
+        top: 0px;
+        opacity: 1;
+        z-index: 99;
+        transform: translate(0%, 0);
+    }
+
+    .tabs_menuClose {
+        width: 14vw;
+        height: 14vw;
+        background: #ffa723;
+        position: absolute;
+        right: -16px;
+        top: 0;
+        border-radius: 50%;
+        color: #fff;
+        transform: rotate(180deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tabs_menu > h2 {
+        display: none;
+    }
+
+    .tabs_collection > li > span {
+        width: 80%;
+        color: #404040;
+        background-color: transparent;
+        border-bottom: 0.5px solid #efefef;
+        border-radius: 0;
+        font-size: 3.6vw;
+        padding: 1vw 0;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+      
+
+    .tabs_panel {
         width: 100%;
-        height: 80px;
-        background-color: red;
-        display: inline-block;
+    }
+
+    .tabs_panel h1 {
+        font-size: 5.4vw;
+    }
+
+    .tabs_panel > .offers {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1vw;
+        gap: 6vw;
+    }
+
+    .offer {
+        border-radius: 4vw;
+    }
+
+    .offer > img {
+        width: 100%;
+        height: 41vw;
+        object-fit: cover;
+    }
+
+    .offer > p {
+        font-size: 3.7vw;
+    }
+
+    .offer > span {
+        font-size: 2.9vw;
+    }
+
+    .tabs_sidebar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -79px;
+        padding-bottom: 40px;
+    }
+
+    .tabs_sidebar > .sidebar {
+        margin-left: -40px;
+        background: #edf9ff;
+        border-radius: 10vw;
+        color: #19b1f4;
+        padding: 4vw 8vw;
+        position: relative;
+        font-size: 2.9vw;
+    }
+
+    .tabs_sidebar > .sidebar::after {
+        content: url(https://therepublicoftoys.uz/static/media/modal.865829e1.svg);
+        position: absolute;
+        width: 10vw;
+        right: -6vw;
+        top: -1vw;
+        height: 10vw;
     }
 }
