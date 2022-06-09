@@ -43,7 +43,7 @@ function App() {
     setActiveCategory(category)
   }
   
-
+  console.log(setCategories);
   return (
     <div className="app">
       <Nav />
@@ -60,3 +60,9 @@ function App() {
 }
 
 export default App;
+
+
+
+
+// background: linear-gradient(-90deg,#007cf0,#00dfd8,#ff0080,#007cf0);
+// animation: collaboration-button_backgroundAnim__JOflA 8s ease-in-out infinite;
