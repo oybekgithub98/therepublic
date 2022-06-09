@@ -11,7 +11,6 @@ import OfferPage from './components/link/offerPage/OfferPage';
 import AboutPage from './components/aboutPage/AboutPage';
 import ScrollArrow from './components/scrollArrow/ScrollArrow';
 
-// const allCategories = ['All', ...new Set(tabsData.map((item) => item.category))]
 const allCategories = ["All", "плашадок", "Спортивные", "девчонок", "Конструкторы", "Машинки", "уморазвития"]
 
 function App() {
@@ -55,7 +54,7 @@ function App() {
         <Route path="/product/:id" element={<OfferPage products={products} />}/>
       </Routes>
       <Footer />
-      {/* <ScrollArrow />  */}
+      <ScrollArrow /> 
     </div>
   );
 }

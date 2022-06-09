@@ -10,7 +10,6 @@ const Showroom = () => {
     const { t } = useTranslation();
     const [isModelOpen, setIsModelOpen] = useState(false);
     const [activeCard, setActiveCard] = useState(null);
-    const [partnerSlide, setPartnerSlide] = useState(4);
 
     const toggleModal = () => setIsModelOpen(!isModelOpen);
     const activateModal = (currentButton) => {
@@ -27,23 +26,24 @@ const Showroom = () => {
         }
     }, [isModelOpen]);
 
-
-    useEffect(() => {
-        window.onresize = () => {
-            if (window.innerWidth > 1200) {
-              setPartnerSlide(4);
-            } else if(window.innerWidth > 767) {
-              setPartnerSlide(3);
-            } else if(window.innerWidth > 630) {
-              setPartnerSlide(2);
-            } else if(window.innerWidth > 230) {
-              setPartnerSlide(1);
-            } else {
-              setPartnerSlide(4);
-            }
-        };
-      }, []);
-
+    var settings = {
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 630,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ],
+    };
     return (
         <div className='showroom' id="showroom">
             <div className="showroom_wrapper">
@@ -86,9 +86,10 @@ const Showroom = () => {
                                 <div className="partner_body">
                                     <div className="partner_body_wrapper">
                                         <Slider
-                                            slidesToShow={partnerSlide}
+                                            slidesToShow={4}
                                             swipeToSlide={true}
                                             focusOnSelect={true}
+                                            {...settings}
                                         >
                                             <div className='partner_item'>
                                                 <img src="https://api.dev.therepublicoftoys.uz///img/img_83074293910718.png" alt="" />
